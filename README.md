@@ -1,3 +1,14 @@
+# Spectator Summer Fellowship
+
+Make sure you have updated Node.js and npm before working on this project. To begin, clone this git repo and run `npm install` to install all the dependencies.
+
+Visit the [SemanticUI](https://react.semantic-ui.com/) website to get started learning about their API.
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

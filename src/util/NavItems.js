@@ -1,9 +1,5 @@
 export const NavItems = [
   {
-    "name": "COVID-19",
-    "link": "/covid-19"
-  },
-  {
     "name": "News",
     "link": "/news"
   },
@@ -12,20 +8,12 @@ export const NavItems = [
     "link": "/opinion"
   },
   {
-    "name": "Sports",
-    "link": "/sports"
-  },
-  {
     "name": "A&E",
     "link": "/arts-and-entertainment"
   },
   {
-    "name": "The Eye",
-    "link": "/eye"
-  },
-  {
-    "name": "Photo",
-    "link": "/photo"
+    "name": "Sports + Eye",
+    "link": "/sports-eye"
   },
   {
     "name": "Graphics",
@@ -36,14 +24,14 @@ export const NavItems = [
     "link": "/Illustrations"
   },
   {
-    "name": "Spectrum",
-    "link": "/spectrum"
+    "name": "Testimonials",
+    "link": "/testimonials"
   }
 ];
 
 const Home = [
   {
-    "name": "Year In Review",
+    "name": "Spectator Summer Fellowship",
     "link": "/"
   }
 ];

@@ -13,7 +13,6 @@ import EyeContainer from './containers/EyeContainer'
 import PhotoContainer from './containers/PhotoContainer'
 // import DesignContainer from './containers/DesignContainer'
 import AEContainer from './containers/AEContainer'
-import SpectrumContainer from './containers/SpectrumContainer'
 import CovidContainer from './containers/COVIDContainer'
 import GraphicsContainer from './containers/GraphicsContainer'
 import IllustrationsContainer from './containers/IllustrationsContainer'
@@ -34,11 +33,9 @@ class App extends Component {
     const news = () => <NewsContainer data = {data.News} />
     const opinion = () => <OpinionContainer data={data.Opinion}/>
     const eye = () => <EyeContainer data = {data.Eye}/>
-    const photo = () => <PhotoContainer data = {data.Photos}/>
     // const design = () => <DesignContainer data = {data.Design} />
     const sports = () => <SportsContainer data = {data.Sports} />
     const ane = () => <AEContainer data = {data["A&E"]}/>
-    const spectrum = () => <SpectrumContainer data = {data.Spectrum} />
     const covid = () => <CovidContainer data = {data.Covid} />
     const graphics = () => <GraphicsContainer data = {data.Graphics} />
     const illo = () => <IllustrationsContainer data = {data.Illustrations} />
@@ -61,23 +58,20 @@ class App extends Component {
                         }
                       </Desktop>
                       <MobileAndTablet>
-                        {this.props.location.pathname === "/spectrum"
+                         {this.props.location.pathname === "/spectrum"
                           ? <NavBar menuItems={NavItemsWithHome}/> 
                           : <NavBar menuItems={NavItemsWithHome} transparent/>
-                        }
+                        } 
                       </MobileAndTablet>
                       <Switch onUpdate={() => console.log("update")} >
                         <Route exact path="/" component={home} />
-                        <Route exact path="/covid-19" component={covid} />
                         <Route exact path="/news" component={news} />
                         <Route exact path="/opinion" component={opinion} />
                         <Route exact path="/sports" component={sports} />
                         <Route exact path="/arts-and-entertainment" component={ane} />
                         <Route exact path="/eye" component={eye} />
-                        <Route exact path="/photo" component={photo} />
                         <Route exact path="/graphics" component={graphics} />
                         <Route exact path="/illustrations" component={illo} />
-                        <Route exact path="/spectrum" component={spectrum} />
                         {/* <Route exact path="/design" component={design} /> */}
                         
                       </Switch>

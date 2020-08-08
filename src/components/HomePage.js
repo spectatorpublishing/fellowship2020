@@ -146,11 +146,11 @@ export default class HomePage extends Component {
               </Wrapper>
               <LeftDiv>
                 <YearDiv>
-                  <Year>2019 - 2020</Year>
+                  <Year>2020</Year>
                 </YearDiv>
                 <LeftTitleDiv>
                   <MobileLeftTitle>
-                    YEAR IN REVIEW
+                    Spectator Summer Fellowship
                   </MobileLeftTitle>
                 </LeftTitleDiv>
               </LeftDiv>
@@ -183,11 +183,11 @@ export default class HomePage extends Component {
           <HomePageContainer>
             <LeftDiv>
               <YearDiv>
-                <Year>2019 - 2020</Year>
+                <Year>2020</Year>
               </YearDiv>
               <LeftTitleDiv>
                 <LeftTitle>
-                  YEAR IN REVIEW
+                  Spectator Summer Fellowship
                 </LeftTitle>
               </LeftTitleDiv>
             </LeftDiv>

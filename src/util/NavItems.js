@@ -36,3 +36,4 @@ const Home = [
   }
 ];
 
+export const NavItemsWithHome = Home.concat(NavItems);

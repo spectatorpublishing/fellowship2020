@@ -4,7 +4,7 @@ import { Mobile, Tablet, Desktop } from 'react-responsive-simple';
 
 const Background = styled.div`
   width: 100%;
-  background-color: ${props => props.theme.indigo};
+  background-color: #222430;
   color: ${props => props.theme.white};
   padding-top: 5vh;
 `;

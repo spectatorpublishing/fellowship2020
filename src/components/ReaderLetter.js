@@ -15,7 +15,6 @@ const letter =
 
 
 let LetterContain = styled.div`
-  padding-left: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -41,10 +40,11 @@ let TempLetter = styled.h2`
   display: flex;
   align-text: justify;
   align-items: left;
-  margin-right: 10vw;
   margin-bottom: 20px;
   font-size: 5em;
   position: relative;
+  padding-left: 10vw; 
+  padding-bottom: 20px; 
 `
 const TitleBlurb = styled.p`
   font-weight: 25;
@@ -57,6 +57,8 @@ const TitleBlurb = styled.p`
   z-index: 2;
   position: relative;
   white-space: pre-line;
+  padding-left: 10vw; 
+  padding-right: 10vw; 
 `;
 
 let MobileLetter = styled.h3`
@@ -83,6 +85,7 @@ const Line = styled.h5`
    color: ${props => props.theme.white};
   display: flex;
   flex-direction: row;
+  padding-left: 10vw; 
   margin: 0.5rem 0;
    @media only screen and (max-width: 991px){
     padding: 0px 10vw 15px 10vw;
@@ -103,6 +106,7 @@ const Border = styled.div`
     width: 69.211px;
     border-width: 2pt;
     float: left;
+    padding-left: 10vw; 
     @media only screen and (max-width: 991px){
       padding: 15px 10vw 5px 10vw;
       margin: 0;
@@ -113,6 +117,7 @@ const SectionDivider = styled.hr`
   color: ${props => props.theme.white};
   background-color: ${props => props.theme.white};
   border: none;
+
 `
 
 class EditorLetter extends Component {

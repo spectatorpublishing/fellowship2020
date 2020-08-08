@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Crown from '../../assets/Crown.js';
 
 let NavContainer = styled.div `
-  background-color: ${props => props.theme.black};
+  background-color: ${props => props.theme.white};
   display: flex;
   flex-direction: row;
   height: 48px;
@@ -72,7 +72,7 @@ let MenuColumn = styled.div`
 `
 
 let MenuLink = styled(NavLink)`
-  color: ${props => props.theme.white};
+  color: #B9D9EB;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -89,7 +89,7 @@ let MenuLink = styled(NavLink)`
   }
 
   :hover {
-    color: ${props => props.theme.blue};
+    color: #1b2945;
   }
 
   :focus {

@@ -4,13 +4,12 @@ import { withRouter } from 'react-router'
 import { ThemeProvider } from "styled-components";
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
 import { GlobalStyles, Theme } from "./util/GlobalStyles";
-// Hello world
+
 import HomeContainer from './containers/HomeContainer'
 import NewsContainer from './containers/NewsContainer'
 import OpinionContainer from './containers/OpinionContainer'
 import SportsContainer from './containers/SportsContainer'
 import EyeContainer from './containers/EyeContainer'
-// import DesignContainer from './containers/DesignContainer'
 import AEContainer from './containers/AEContainer'
 import CovidContainer from './containers/COVIDContainer'
 import GraphicsContainer from './containers/GraphicsContainer'
@@ -32,10 +31,8 @@ class App extends Component {
     const news = () => <NewsContainer data = {data.News} />
     const opinion = () => <OpinionContainer data={data.Opinion}/>
     const eye = () => <EyeContainer data = {data.Eye}/>
-    // const design = () => <DesignContainer data = {data.Design} />
     const sports = () => <SportsContainer data = {data.Sports} />
     const ane = () => <AEContainer data = {data["A&E"]}/>
-    const covid = () => <CovidContainer data = {data.Covid} />
     const graphics = () => <GraphicsContainer data = {data.Graphics} />
     const illo = () => <IllustrationsContainer data = {data.Illustrations} />
 

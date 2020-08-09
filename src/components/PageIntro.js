@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
-import ButtonToHome from "./ButtonToHome.js";
-
-let YIRButton = styled.div`
-  position: absolute;
-  z-index: 10;
-  top: calc(5vh + 48px);
-  left: 5vw;
-`
 
 let TempTitle = styled.h1`
   color: ${props => props.theme.white};
@@ -103,9 +95,6 @@ class PageIntro extends Component {
     return ([
       <Desktop>
         <TempHeader {...this.props}>
-          <YIRButton>
-            <ButtonToHome />
-          </YIRButton>
           <TempTitle isIllo={this.props.isIllo}>
             <span>
               {isEye && <EyeLogo 

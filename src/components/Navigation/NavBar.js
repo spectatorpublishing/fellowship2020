@@ -266,7 +266,7 @@ class NavBar extends Component {
   
   updateTitle(match, name) {
     if (match) {
-      document.title = name + " | 2019-20 Year In Review";
+      document.title = name + " | Spectator Summer Fellowship";
     }
   }
 
@@ -339,7 +339,6 @@ class NavBar extends Component {
         <LogoContainer>
           <CrownWrapper 
             href="/" 
-            target="_blank"
             scrolling={""+(this.props.isScrolling || !this.props.hideCrown)}
           >
             <Crown />

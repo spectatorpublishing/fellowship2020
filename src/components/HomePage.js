@@ -35,7 +35,7 @@ let Title = styled.h1`
   color: ${(props) => props.theme.white};
   text-shadow: ${(props) => props.theme.shadow};
 `;
-let MobileLeftTitle = styled(Title)`
+let MobileTitle = styled(Title)`
   margin-top: 1rem;
   line-height: 4rem;
 `;
@@ -45,18 +45,6 @@ let YearDiv = styled.div`
 let Year = styled.h3`
   color: ${(props) => props.theme.white};
   text-shadow: ${(props) => props.theme.shadow};
-`;
-let LogoDiv = styled.a`
-  position: absolute;
-  margin: 5vh 10vw;
-  z-index: 1;
-
-  &:hover {
-    opacity: 0.8;
-  }
-`;
-let SpecLogo = styled.img`
-  height: 25px;
 `;
 
 const Wrapper = styled.div`
@@ -117,7 +105,7 @@ export default class HomePage extends Component {
                   <Year>2020</Year>
                 </YearDiv>
                 <TitleDiv>
-                  <MobileLeftTitle>Spectator Summer Fellowship</MobileLeftTitle>
+                  <MobileTitle>Spectator Summer Fellowship</MobileTitle>
                 </TitleDiv>
               </LeftDiv>
             </HomePageContainer>
@@ -125,9 +113,6 @@ export default class HomePage extends Component {
         </MobileAndTablet>
 
         <Desktop>
-          <LogoDiv href="https://www.columbiaspectator.com/" target="_blank">
-            <SpecLogo src={whitemasthead} />
-          </LogoDiv>
           <CarouselWrapper>
             <Carousel
               showArrows={false}

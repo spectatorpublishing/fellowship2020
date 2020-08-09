@@ -338,7 +338,7 @@ class NavBar extends Component {
         {!this.props.hideCrown && (
         <LogoContainer>
           <CrownWrapper 
-            href="https://www.columbiaspectator.com/" 
+            href="/" 
             target="_blank"
             scrolling={""+(this.props.isScrolling || !this.props.hideCrown)}
           >

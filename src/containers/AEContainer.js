@@ -5,8 +5,7 @@ import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro';
 import EditorLetter from '../components/EditorLetter';
 
-const letter = "Dear readers,\
-\n\nTheaters are dark. Art galleries are closed. Concert halls are silent.\
+const letter = "Theaters are dark. Art galleries are closed. Concert halls are silent.\
 \n\nThough there are substitutes like online concerts, live-streamed plays, and virtual museums, you cannot feel the chill that settles over an audience during a gripping scene in a drama. You cannot feel the musical vibrations or chant lyrics at a concert among thousands of strangers. You cannot study the contours of a painter’s brush strokes or notice how the colors change as the light shifts.\
 \n\nThe arts are at a crossroads. At the same time, we need them more than ever. Where, then, does that leave arts journalism?\
 \n\nThat was the question I posed to the 72 brilliant and thoughtful students who participated in the Spectator Summer Fellowship Program this year. I personally do not know the answer, but I wanted to give these students the tools to discover it for themselves.\

@@ -41,7 +41,7 @@ let TempLetter = styled.h2`
   align-text: justify;
   align-items: left;
   margin-bottom: 20px;
-  font-size: 5em;
+  font-size: 4.5em;
   position: relative;
   padding-left: 10vw; 
   padding-bottom: 20px; 
@@ -126,7 +126,7 @@ class EditorLetter extends Component {
       <React.Fragment>
         <Desktop>
           <LetterContain>
-            <TempLetter> Dear readers, </TempLetter>
+            <TempLetter>LETTER FROM THE DIRECTOR</TempLetter>
             <TitleBlurb>{letter}</TitleBlurb>
             <Border><SectionDivider/></Border>
             <Line>Sarah Braka,<Role>Director of Summer Fellowship Program, Head Copy Editor</Role></Line> 
@@ -134,7 +134,7 @@ class EditorLetter extends Component {
         </Desktop>
         <MobileAndTablet>
           <MobileContain>
-            <MobileLetter> Dear readers, </MobileLetter>
+            <MobileLetter>LETTER FROM THE DIRECTOR</MobileLetter>
             <MobileBlurb>{letter}</MobileBlurb>
             <Border><SectionDivider/></Border>
             <MobileLine>Sarah Braka, <MobileRole>Director of Summer Fellowship Program, Head Copy Editor</MobileRole></MobileLine> 

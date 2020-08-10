@@ -72,7 +72,7 @@ let MenuColumn = styled.div`
 `
 
 let MenuLink = styled(NavLink)`
-  color: #B9D9EB;
+  color: #9dd5ed;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -89,11 +89,11 @@ let MenuLink = styled(NavLink)`
   }
 
   :hover {
-    color: #1b2945;
+    color: #3CABDB;
   }
 
   :focus {
-    color: ${props => props.theme.blue};
+    color: #3CABDB;
   }
 
   &.navLinkActive {

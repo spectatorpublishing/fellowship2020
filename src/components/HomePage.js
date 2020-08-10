@@ -31,7 +31,7 @@ let TitleDiv = styled.div`
 `;
 let Title = styled.h1`
   word-spacing: 100vw;
-  line-height: 7rem;
+  line-height: 8rem;
   color: ${(props) => props.theme.white};
   text-shadow: ${(props) => props.theme.shadow};
 `;
@@ -43,6 +43,7 @@ let YearDiv = styled.div`
   text-align: center;
 `;
 let Year = styled.h3`
+  font-size: 75px;
   color: ${(props) => props.theme.white};
   text-shadow: ${(props) => props.theme.shadow};
 `;

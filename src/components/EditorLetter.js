@@ -35,6 +35,7 @@ let TempLetter = styled.h2`
   background-color: ${props => props.theme.indigo};
   align-items: left;
   margin-right: 10vw;
+  font-size: 4.5em;
   /* font-size: 8em; -- specified by global styles */
   position: relative;
 `
@@ -44,6 +45,7 @@ let MobileLetter = styled.h3`
     padding: 15px;
     margin-top: 0.8rem;
     text-align: center;
+    font-size: 1.5em
     color: ${props => props.theme.white};
     background-color: ${props => props.theme.indigo};
 
@@ -112,7 +114,7 @@ class EditorLetter extends Component {
       <React.Fragment>
         <Desktop>
           <LetterContain>
-            <TempLetter> LETTER FROM THE EDITOR </TempLetter>
+            <TempLetter> LETTER FROM THE EDITORS </TempLetter>
             <TitleBlurb>{this.props.letter}</TitleBlurb>
             <Border><SectionDivider/></Border>
             <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 
@@ -121,7 +123,7 @@ class EditorLetter extends Component {
 
         <MobileAndTablet><MobileContain>
         </MobileContain>
-          <MobileLetter>LETTER FROM THE EDITOR</MobileLetter>
+          <MobileLetter>LETTER FROM THE EDITORS</MobileLetter>
           <MobileBlurb>{this.props.letter}</MobileBlurb>
           
           <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 

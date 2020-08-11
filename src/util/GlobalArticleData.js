@@ -439,7 +439,6 @@ const data = {
                 "link": "#barnard"
             },
         ],
-        "blurb": "Universities are far more than just places for intellectual enrichment. They hold the power and influence to enact consequential change. Students, investors, staff, and administrators all have perspectives—some conflicting—of how Columbia should act as an Ivy League institution, multi-billion-dollar corporation, and ground-breaking research university. Spectator’s news team has compiled coverage of some of the top storylines that have driven discourse on and around campus. Below, find some of the most talked-about and top investigative stories from the past year:",
         "items": [{
                 "name": "As higher-ed grapples with budget shortfalls, Columbia shapes the role of an educational institution",
                 "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/S2XK2EVJYJEMFEYTQB4I6VPGTE.jpg",
@@ -762,7 +761,6 @@ const data = {
                 "link": "#culture-cuisine"
             }
         ],
-        "blurb": "Arts & Entertainment strives to analyze and investigate Columbia’s arts scene to hold it accountable to being the best it can be. We provide a space to critically discuss the arts at Columbia and aim to promote engagement with the arts by showing every reader why the arts should matter to them.",
         "items": [{
                 "name": "Virtual art is a silver lining of social distancing",
                 "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/AKYVZ4W2D5CSZEO4Y4GXD4SBRI.jpg",
@@ -1134,7 +1132,6 @@ const data = {
     },
     "Opinion": {
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SLKRYBOP4FHWVABUCFXNPNIDGU.gif",
-        "blurb": "The editorial pages of the Spectator provide a comprehensive look into the most pressing, vulnerable topics affecting the Columbia community. This content aims not only to engage the reader but also to further discussion and catalyze action.",
         "items": [{
                 "name": "OP-EDS",
                 "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PVSRKSO35BHPVM2LS6G7MIODY4.jpg",
@@ -2186,7 +2183,6 @@ const data = {
                 "link": "#illustrations"
             }
         ],
-        "blurb": "This past year the Spectator has worked to redefine journalism through the integration of data and visuals into our reporting. The Spectator Graphics team has contributed to innovative storytelling across News, Opinion, A&E, Sports, and The Eye in order to showcase the diverse talents of its staff and produce more compelling stories by showing, rather than just telling. A small group — but one with profound impact — the Spectator Graphics team is responsible for building web scrapers, data wrangling, visualizing data, and building interactive stories which seamlessly combine words, data, and visuals that ultimately create stories larger than the sum of their parts. Our team hopes to continue elevating the standard for journalism in the digital age for years to come.",
         "items": [
             //"Graphics",
             {
@@ -2559,7 +2555,6 @@ const data = {
     "Illustrations": {
         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/STTVVI5JGRAQNCLNFJ4HLRT2EA.gif",
         sections: [],
-        "blurb": "Research shows that we remember images better than words. As illustrators, beyond documenting important events, we capture the personal stories and emotions tied to them. Take a look at the past year—from political campaigns to Zoom classes—through our eyes.",
         "items": [
             {
                 "name": "Illustrations",

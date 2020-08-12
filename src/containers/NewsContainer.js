@@ -4,6 +4,8 @@ import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro'
 import EditorLetter from '../components/EditorLetter';
+import Lightbox from '../components/Lightbox/Lightbox';
+import PhotoGrid from '../components/PhotoGrid.js';
 
 const letter = "Reporting for college newspapers places journalists in a position unlike any other professional setting. These fellows have had to ask themselves the same questions that reporters ask each other.\
 \n\nWhile Columbia draws students from a diverse range of backgrounds and perspectives, we are all members of an institution whose historical and economic prominence in its surrounding community has lent itself to consequential decision-making. Alongside Spectator reporters, the fellows have had to think deeply about their role as Columbia students before even stepping foot on campus. Despite our expectations of what constitutes the “normal” American college experience—shaped by pictures in vintage yearbooks and Instagram posts—our experiences as students at Columbia are by no means customary. While our society and culture have led us to believe that the experiences we have are universal, the majority of the country’s high school graduates never attend a four-year institution, and even those who do are not ensured a residential experience.\
@@ -14,65 +16,40 @@ const letter = "Reporting for college newspapers places journalists in a positio
 class NewsContainer extends Component {
   constructor() {
       super()
-      this.handleWheel = this.handleWheel.bind(this)
+      this.state = {
+        // graphicsLightboxActive: false,
+        illustrationsLightboxActive: false,
+        lightboxIndex: 0
+      }
+      this.closeIllustrationsLightbox = this.closeIllustrationsLightbox.bind(this)
+      this.openIllustrationsLightbox = this.openIllustrationsLightbox.bind(this)
   }
 
-  handleWheel(e){
-    // let curY = window.window.pageYOffset
-    // let height = window.innerHeight
+  closeIllustrationsLightbox(){
+		this.setState({"illustrationsLightboxActive": false})
+	}
 
-    // if (curY>this.props.SliderData.length*height)
-    //   return
-
-    // if (curY % height < height/2)
-    //   curY -= curY % height
-    // else
-    //   curY += (height - curY % height)
-
-    // if(e.deltaY > 0) {
-    //   window.scrollTo({
-    //     top: curY + height*1.06,
-    //     left: 0,
-    //     behavior: 'smooth'
-    //   });
-    // } else if (e.deltaY < 0) {
-    //   let target = curY - height*0.94
-    //   if (target<height)
-    //     target -= height*0.06
-    //   window.scrollTo({
-    //     top: target,
-    //     left: 0,
-    //     behavior: 'smooth'
-    //   }); 
-    // }
-
-    // if(e.deltaY > 0) {
-    //   window.scrollTo(0, curY + height*1.06)
-    // } else if (e.deltaY < 0) {
-    //   let target = curY - height*0.94
-    //   if (target<height)
-    //     target -= height*0.06
-    //   window.scrollTo(0, target)
-    // }
-     
-  }
+	openIllustrationsLightbox(i){
+		this.setState({"illustrationsLightboxActive": true, "lightboxIndex": i})
+	}
 
   render() {
     //
         
     return (
       <React.Fragment>
-        <div onWheel = {this.handleWheel}>
+        <div>
           <PageIntro title="NEWS" description={this.props.data.blurb} img_src={this.props.data.img}/>
           <EditorLetter letter={letter} author="Valeria Escobar and Stephanie Lai" role="News Editors"/>
-          <ScrollingNavBar menuItems={this.props.data.sections}>
+
             {this.props.data.items.map((data, i) => 
               <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
-          </ScrollingNavBar> 
         </div>
       </React.Fragment>
+      
     );
   }
 }
 
 export default NewsContainer;
+

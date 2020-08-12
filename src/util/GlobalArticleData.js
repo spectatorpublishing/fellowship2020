@@ -421,148 +421,45 @@ const data = {
         ]
     },
     "News": {
-        "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/GIWJDYYJPZBPDHSZROKJWFRNHE",
+        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/INJWF2QRJRBCRI26EAVTLMVMIE.jpg ",
         sections: [{
-                "name": "Administration",
-                "link": "#administration"
+                "name": "Student Life and City",
+                "link": "#Student-Life-and-City"
             },
-            {
-                "name": "Tessa Majors",
-                "link": "#tessa-majors"
-            },
-            {
-                "name": "Businesses",
-                "link": "#businesses"
-            },
-            {
-                "name": "Barnard",
-                "link": "#barnard"
-            },
+            
         ],
         "items": [{
-                "name": "As higher-ed grapples with budget shortfalls, Columbia shapes the role of an educational institution",
+                "name": "As Columbia plans to reopen to students, policies don’t meet eye-to-eye with students and community members",
                 "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/S2XK2EVJYJEMFEYTQB4I6VPGTE.jpg",
-                "blurb": "As a university, Columbia must consider the ethics of offering academic programs with little job marketability. As a corporation, it must grapple with the challenges of receiving donations from those who create the same problems that Columbia’s research seeks to solve. As an institution spreading into neighboring communities in Morningside Heights and Manhattanville, it must understand its obligation to the people who have been displaced for the sake of an academic haven. And as Columbia is all of these things and more, there are millions of affiliates that contribute to the University community—but who deserves compensation for their labor?",
+                "blurb": "Who is impacted by the University’s reopening plans and how do they play out? Spectator’s news fellows look to consequential conversations between students, faculty and the community. ",
                 "articles": [{
-                        "title": "Bollinger announces task forces on Columbia’s role in climate solutions, pressing global problems",
-                        "author": "Teddy Ajluni", 
-                        "link": "https://www.columbiaspectator.com/news/2019/09/19/bollinger-announces-two-new-task-forces-to-address-climate-change-pressing-human-problems-on-a-global-scale/",
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/Z4744EH7TRFHHAXWMTEIPBQ53M.jpg"
+                        "title": "Columbia asked students to pledge to ensure a campus safe from COVID-19. Not everyone is on board.",
+                        "author": "Claire Schweitzer and Aili Hou", 
+                        "link": "https://www.columbiaspectator.com/news/2020/07/28/columbia-asked-students-to-pledge-to-ensure-a-campus-safe-from-covid-19-not-everyone-is-on-board/",
+                        "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/GPCEDMCMZVCMZK4DG53TRXLPZY.jpg"
                     },
                     {
-                        "title": "‘The next chapter’: Despite history of alumni apathy, Bollinger-era initiatives drive newfound culture of engagement", 
-                        "author": "Griffin Jones",
-                        "link": "https://www.columbiaspectator.com/news/2019/10/31/the-next-chapter-despite-history-of-alumni-apathy-bollinger-era-initiatives-drive-newfound-culture-of-engagement/",
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/7VNT25JGZFB6JPBGB5UGTZPTZQ.jpg"
+                      "title": "Incoming out-of-state students express financial and logistical concerns over New York quarantine advisory",
+                      "author": "Talia Abrahamson and Victoria Choe",
+                      "link": "https://www.columbiaspectator.com/news/2020/07/28/incoming-out-of-state-students-express-financial-and-logistical-concerns-over-new-york-quarantine-advisory/",
+                      "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YBXWOMQ36RF7RBYPLVXLJCL3FI.png",
                     },
                     {
-                        "title": "Donors have not given to Columbia’s climate research. Columbia says a climate school will change that.",
-                        "author": "Griffin Jones",
-                        "link": "https://www.columbiaspectator.com/news/2020/02/06/donors-havent-given-to-columbias-climate-research-columbia-says-the-climate-school-will-change-that/",
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/AZLD52PLYBHUPILEC77OMZ64WY.jpg"
+                      "title": "The Open Streets program could facilitate social distancing near campus. Its success depends on the community.",
+                      "author": "Katherine Nessel and Kathy Fang",
+                      "link": "https://www.columbiaspectator.com/news/2020/07/31/the-open-streets-program-could-facilitate-social-distancing-near-campus-its-success-depends-on-the-community/",
+                      "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PFMF5YOOYNBFJJAKSQUUIMH45U.JPG" 
+                    
                     },
                     {
-                        "title": "The Ivy League has over $135 billion in endowment. Not a single university has pledged to fully divest from fossil fuels.",
-                        "author": "Valeria Escobar",
-                        "link": "https://www.columbiaspectator.com/news/2020/02/17/the-ivy-league-has-over-135-billion-in-endowment-not-a-single-university-has-pledged-to-fully-divest-from-fossil-fuels/", 
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/EFRSWT3AGRELHDBCBDXX3632DA.jpg"
-                    }, {
-                        "title":  "‘An ethical quandary’: In face of national humanities decline, English department reckons with future of graduate students",
-	                    "author": "Serena White",
-	                    "link": "https://www.columbiaspectator.com/news/2019/10/31/an-ethical-quandary-in-face-of-national-humanities-decline-english-department-reckons-with-future-of-graduate-students/",
-	                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PGEYWUWWKFEJLNCLJSPX2QGY4Q.jpg"    
-                    }, {
-                        "title": "Graduate Workers Union votes to authorize strike with overwhelming support", 
-                        "author": "Valeria Escobar",
-                        "link": "https://www.columbiaspectator.com/news/2020/03/03/graduate-workers-union-holds-vote-to-authorize-strike-as-negotiation-deadline-approaches/", 
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/N5Y2CXVHW5BV5FG3IGIE7PZZVI.jpg"
+                      "title": "Barnard students express financial and logistical concerns over quarantining off campus before move-in",
+                      "author": "Talia Abrahamson",
+                      "link": "https://www.columbiaspectator.com//news/2020/08/05/barnard-students-express-financial-and-logistical-concerns-over-quarantining-off-campus-before-move-in/",
+                      "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UEXEQ3KDFBAXHNUHCDU4DCMVDQ.jpg" 
+                    
                     }
                 ]
-            },
-            {
-                "name": "University role in public safety called into question following death of Tessa Majors",
-                "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6XKFOQJYZRCD7AT4LY7FFCWP6E.jpg",
-                "blurb": "On Dec. 11, the University sent out a Clery Crime Alert that soon made national news. Tessa Majors, a Barnard first-year, was killed during an attempted robbery in Morningside Park. In the days following, students and University administrators mourned Majors’ death, calling for more safety precautions at the park. Conversations surrounding racism arose as the community faced the reality that many did not know how to navigate the park. And as many grieved the incident, three youth suspects were charged for the crime, raising additional concerns over criminal justice.",
-                "articles": [{
-                        "title": "First-year Barnard student remembered for her energy and passion",
-                        "author": "Stephanie Lai and Sofia Partida",
-                        "link": "https://www.columbiaspectator.com/news/2019/12/13/first-year-barnard-student-remembered-for-her-energy-and-passion/", 
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/6XKFOQJYZRCD7AT4LY7FFCWP6E.jpg" 
-                    },
-                    {
-                        "title": "Community members see long-awaited safety improvements to Morningside Park in aftermath of Majors’ death ", 
-                        "author": "Stephanie Lai",
-                        "link": "https://www.columbiaspectator.com/news/2020/01/30/community-members-see-long-awaited-safety-improvements-to-morningside-park-in-aftermath-of-majors-death/",
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/5JZKFWDW7ZGFHFKP3G7WTXCQQY"
-                    },
-                    {
-                        "title": "As Majors’ case awaits trial, experts say public urgency has led to unfair treatment of youth suspects", 
-	                    "author": "Destiny Glover",
-	                    "link": "https://www.columbiaspectator.com/news/2020/03/25/as-majors-case-awaits-trial-experts-say-public-urgency-has-led-to-unfair-treatment-of-youth-suspects/",
-	                    "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/36ERH5GGV5BYDPNFPQ4SVRWQXU.jpg"
-                    },
-                    {
-                        "title": "Morningside Park is essential to Harlem’s identity. How has the University misunderstood resident challenges in the public space?", 
-	                    "author": "Stephanie Lai",
-	                    "link": "https://www.columbiaspectator.com/news/2020/01/22/morningside-park-is-essential-to-harlems-identity-how-has-the-university-misunderstood-resident-challenges-in-the-public-space/",
-	                    "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/L42EE7U75FCWPHZVD3DJDTSX2Q.jpg"
-                    },
-                    {
-                        "title": "Activists rented an empty storefront to address youth violence in West Harlem. Then it closed down.", 
-                        "author": "Stephanie Lai",
-                        "link": "https://www.columbiaspectator.com/news/2020/02/04/activists-rented-an-empty-storefront-to-address-youth-violence-in-west-harlem-then-it-closed-down/", 
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/R7R4NHFE3RGKPONNZMP2EOVIPU.jpg"
-                    },
-                ]
-            },
-            {
-                "name": "Businesses confront the effects of Columbia’s expansion",
-                "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ADJ37JSOSBCNBCQ53HYZ2AI7E4.jpg",
-                "blurb": "Ongoing construction for the buildings for Columbia Business School on the Manhattanville campus has left local businesses in a dire state. Two businesses closed down, and others report revenue declines of 30 percent. Over the years, the University has come under scrutiny for turning a blind eye to the community, and while it has contractual obligations, many community leaders say they are not enough.",
-                "articles": [{
-                        "title" : "Upscaled: The cost of Columbia construction for struggling 12th Avenue businesses",
-                        "author": "Clay Anderson and Stephanie Lai",
-                        "link": "https://www.columbiaspectator.com/news/2020/03/13/upscaled-the-cost-of-columbia-construction-for-struggling-12th-avenue-businesses/",
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/ADJ37JSOSBCNBCQ53HYZ2AI7E4.jpg"
-                    },
-                    {
-                        "title": "Manhattanville campus plans to make 12th Avenue pedestrian-friendly, but will businesses survive until then?", 
-                        "author": "Clay Anderson",
-                        "link": "https://www.columbiaspectator.com/news/2020/01/29/manhattanville-campus-plans-to-make-12th-avenue-pedestrian-friendly-but-will-businesses-survive-until-then/", 
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/KSGQRAR6AZHUHHFDR2FE4MSROI.jpg"
-                    },
-                    {
-                        "title": "Stacking up: Where do Columbia’s contributions to the community rank among its Ivy peers?",
-                        "author": "Stephanie Lai",
-                        "link":"https://www.columbiaspectator.com/news/2019/10/24/stacking-up-where-do-columbias-contributions-to-the-community-rank-among-its-ivy-peers/", 
-                        "img":"https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/FWPTABR7QJGDLN7426RQYVYBEU.jpg"
-                    }
-                ]
-            },
-            {
-                "name": "Barnard faces heat from workers’ unions, Public Safety",
-                "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/P7UHGEBGJ5DLPFIJSAPCKSBT3I.jpg",
-                "blurb": "When six Barnard Public Safety officers physically restrained Alexander McNab, CC ’19, against a counter in the Milstein Center for failing to show identification at the Barnard gates last spring, students and administrators alike called for a thorough review of the college’s campus safety policies. As it makes changes to these policies, however, the college has faced criticism from employees who say that they don’t see a need for the same changes. Meanwhile, years of back-and-forth involving unannounced policy changes, contract violations, and skyrocketing legal fees have worsened tensions between Barnard and the union that represents over 200 employees of the college—including public safety, dining, and housekeeping.",
-                "articles": [{
-                        "title": "“They don’t follow the rules”: Inside Barnard’s broken relationship with its employee union", 
-                        "author": "Juliette Verlaque",
-                        "link": "https://www.columbiaspectator.com/news/2019/10/17/they-dont-follow-the-rules-inside-barnards-broken-relationship-with-its-employee-union/",
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/P7UHGEBGJ5DLPFIJSAPCKSBT3I.jpg"
-                    },
-                    {
-                        "title": "Barnard Public Safety lacks consistent and clear guidelines for officer conduct, external investigation finds",  
-                        "author": "Karen Xia", 
-                        "link": "https://www.columbiaspectator.com/news/2019/08/15/barnard-public-safety-policies-lack-consistency-clarity-and-guidelines-on-use-of-physical-force-according-to-extensive-external-investigation/", 
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/OAP5KY7RONBWXKVHSXOM74MFJY.jpg"
-                    },
-                    {
-                        "title": "What should campus safety look like? As Barnard revises Public Safety policies, officers question college’s approach",   
-                        "author": "Juliette Verlaque",
-                        "link": "https://www.columbiaspectator.com/news/2019/11/21/what-should-campus-safety-look-like-as-barnard-revises-public-safety-policies-officers-question-colleges-approach/ ",
-                        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/QK3WAFF2ZREUVCJNYIALFEQWNE.jpg"
-                    }
-                ]
-            },
+            }
         ]
     },
     "Eye": {
@@ -2019,9 +1916,9 @@ const data = {
         ],
         "blurb": "As Columbia grapples with the effects of COVID-19, its expansive role beyond promoting academic excellence has become strikingly clear. The University holds the power to shape the resources of its surrounding communities, and as an Ivy League institution and multi-billion-dollar corporation, its policies set precedents for institutions across the nation. Amid the struggle for healthcare access and financial security, Columbia wielded great influence over how students, faculty, and the West Harlem community has grappled with the effects of a public health crisis.",
         "items": [{
-            "name": "As higher-ed grapples with budget shortfalls, Columbia shapes the role of an educational institution",
+            "name": "As Columbia plans to reopen to students, policies don’t meet eye-to-eye with students and community members",
             "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/N7HZME5DGVGQHDD4AIJ3ANG3LQ.jpg",
-            "blurb": "As a university, Columbia must consider the ethics of offering academic programs with little job marketability. As a corporation, it must grapple with the challenges of receiving donations from those who create the same problems that Columbia’s research seeks to solve. As an institution spreading into neighboring communities in Morningside Heights and Manhattanville, it must understand its obligation to the people who have been displaced for the sake of an academic haven. And as Columbia is all of these things and more, there are millions of affiliates that contribute to the University community—but who deserves compensation for their labor?",
+            "blurb": "Who is impacted by the University’s reopening plans and how do they play out? Spectator’s news fellows look to consequential conversations between students, faculty and the community. ",
             "articles": [{
                     "title": "The U.S. and Ivy League schools were late to respond to COVID-19. Data shows international universities did better.",
                     "author":  "Kelly Pu, Jun Yi Zhang, Stephanie Lai, Raeedah Wahid",
@@ -2288,11 +2185,10 @@ const data = {
                     "author": "Visual production and graphic by Jason Kao"
                 },
                 {
-                    "title": "‘The next chapter’: Despite history of alumni apathy, Bollinger-era initiatives drive newfound culture of engagement",
-                    "front_image": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/4E3VGN4BF5HT5EHHDZEI45DCSQ.png",
-                    "description": "",
-                    "link": "https://www.columbiaspectator.com/news/2019/10/31/the-next-chapter-despite-history-of-alumni-apathy-bollinger-era-initiatives-drive-newfound-culture-of-engagement/",
-                    "author": "Graphic by Charlotte Li"
+                  "title": "Incoming out-of-state students express financial and logistical concerns over New York quarantine advisory",
+                  "author": "Talia Abrahamson and Victoria Choe",
+                  "link": "https://www.columbiaspectator.com/news/2020/07/28/incoming-out-of-state-students-express-financial-and-logistical-concerns-over-new-york-quarantine-advisory/",
+                  "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YBXWOMQ36RF7RBYPLVXLJCL3FI.png",
                 },
                 {
                     "title": "Stacking up: Where do Columbia’s contributions to the community rank among its Ivy peers?",

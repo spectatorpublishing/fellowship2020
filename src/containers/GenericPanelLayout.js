@@ -24,34 +24,49 @@ const TopContainer = styled.div`
   }
 `
 
-const BottomContainer = styled.div`
-	width: 100vw;
-	float: bottom;
-  background-color: ${props => props.theme.indigo};
-`
-
 const Head = styled.h3`
-	padding: ${({index}) => index % 2 ? ('12vh 2vw 4vh 8vw') : ('12vh 2vw 4vh 35vw')};
-  text-align: ${({index}) => index % 2 ? ('left') : ('right')};
+	padding: ${({ index }) => index % 2 ? '12vh 2vw 4vh 35vw' : '12vh 2vw 4vh 8vw'};
+  text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
   text-shadow: ${props => props.theme.shadow};
   color: white;
   width: 60vw;
   line-height: 100%;
 `
-const MobileHead = styled.h3`
-  padding: 4vh 0vw 2vh 8vw;
+const MobileTitle = styled.h3`
+  padding: 4vh 0vw 2vh 0vw;
   text-shadow: ${props => props.theme.shadow};
   color: white;
   width: 80vw;
-  text-size: 10px;
-  font-size: 1.5rem;
+  text-align:center;
+  font-size: 2rem;
   line-height: 100%;
+  margin-left:auto;
+  margin-right:auto;
 `
 
 const Subtitle = styled.p`
   font-size: 1.2rem;
   text-shadow: ${props => props.theme.shadow};
   padding: 0vh 0vw 12vh 8vw;
+  color: white;
+  width: 60vw;
+`
+
+const MobileAuthor = styled.p`
+  font-size: 1.5rem;
+  text-shadow: ${props => props.theme.shadow};
+  padding: 2vh 0vw 4vh 0vw;
+  color: white;
+  width: 60vw;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+`
+const Author = styled.p`
+  font-size: 1.2rem;
+  text-shadow: ${props => props.theme.shadow};
+  padding: ${({ index }) => index % 2 ? '4vh 2vw 8vh 35vw' : '4vh 2vw 8vh  8vw'};
+  text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
   color: white;
   width: 60vw;
 `
@@ -79,11 +94,12 @@ export default class GenericPanelLayout extends Component {
       <React.Fragment>
         <MobileAndTablet>
           <TopContainer img_src={this.props.data.img} isMobile={this.state.isMobile} />
-
-          <BottomContainer isMobile={this.state.isMobile}>
-            <MobileHead>{this.props.data.name}</MobileHead>
-            <ImageBoxSlider data={this.props.data.articles} />
-          </BottomContainer>
+          {this.props.data.articles.map((data, i) =>
+            <TopContainer img_src={data.img}>
+              <MobileTitle><a target="_blank" style={{ textDecoration: 'none',color:'white' }} href={data.link}>{data.title}</a></MobileTitle>
+              <MobileAuthor>{data.author}</MobileAuthor>
+            </TopContainer>
+          )}
         </MobileAndTablet>
 
         <Desktop>
@@ -94,7 +110,8 @@ export default class GenericPanelLayout extends Component {
             </TopContainer>
             {this.props.data.articles.map((data, i) =>
               <TopContainer img_src={data.img}>
-                <Head index={i+1}>{data.title}</Head>
+                <Head index={i + 1}><a target="_blank" style={{ textDecoration: 'none',color:'white' }} href={data.link}>{data.title}</a></Head>
+                <Author index={i + 1}>{data.author}</Author>
               </TopContainer>
             )}
           </Container>

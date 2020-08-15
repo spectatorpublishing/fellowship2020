@@ -114,7 +114,7 @@ class EditorLetter extends Component {
       <React.Fragment>
         <Desktop>
           <LetterContain>
-            <TempLetter> LETTER FROM THE EDITORS </TempLetter>
+            <TempLetter> LETTER FROM THE EDITOR </TempLetter>
             <TitleBlurb>{this.props.letter}</TitleBlurb>
             <Border><SectionDivider/></Border>
             <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 
@@ -123,7 +123,7 @@ class EditorLetter extends Component {
 
         <MobileAndTablet><MobileContain>
         </MobileContain>
-          <MobileLetter>LETTER FROM THE EDITORS</MobileLetter>
+          <MobileLetter>LETTER FROM THE EDITOR</MobileLetter>
           <MobileBlurb>{this.props.letter}</MobileBlurb>
           
           <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 

@@ -21,23 +21,23 @@ export default class OpinionContainer extends Component {
           <PageIntro title="OPINION" description={this.props.data.blurb} img_src={this.props.data.img}/>
           <EditorLetter letter={letter} author="Tamarah Wallace" role="Editorial Page Editor"/>
 
-          <ExpandingColumns data = {opinion_sections}/>
-          <ScrollingNavBar menuItems={opinion_sections}>
+          {/* <ExpandingColumns data = {opinion_sections}/>
+          <ScrollingNavBar menuItems={opinion_sections}> */}
             <div>
               <GenericPanelLayout data={this.props.data.items[0]} />
             </div>
             {/* <div>
               <GenericPanelLayout data={this.props.data.items[1]} />
             </div> */}
-            <div>
+            {/* <div>
               <GenericPanelLayout data={this.props.data.items[1]} />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <div style={{"height":"5vh"}}></div>
               <h3 style={{color: "white", Left: "1vw", padding: "1vh", "backgroundColor": "black"}}>Columns</h3>
               <PhotoGrid data={this.props.data.items[2].items} flip />
-            </div>
-          </ScrollingNavBar>
+            </div> */}
+          {/* </ScrollingNavBar> */}
       </React.Fragment>
     );
   }

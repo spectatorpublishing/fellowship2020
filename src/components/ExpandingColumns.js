@@ -22,7 +22,7 @@ const Column = styled(NavHashLink)`
     transition: width 0.5s;
     background-position: center;
     background-size: cover;
-	width: ${props => props.hover === -1? '33.33%' : props.index === props.hover? '55%' : "22.5%"};
+	width: ${props => props.hover === -1? '33.33%' : props.index === props.hover? '80%' : "10%"};
 	filter: ${props => props.hover === -1? 'grayscale(0%)' : props.index === props.hover ? 'grayscale(0%)' : 'grayscale(100%)'};
 	@media only screen and (max-width: 991px){
 		filter: ${props => props.hover === -1? 'grayscale(0%)' : props.index === props.hover ? 'grayscale(0%)' : 'grayscale(0%)'};

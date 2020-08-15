@@ -1,8 +1,9 @@
 // Data for Expanding Columns
-export const opinion_sections = [
+// I understand that this is the clunkiest code ever and I'm SORRY I'm sorry I don't know how to code it's honestly shocking that I'm able to do this
+export const illustration_sections = [
 	{
-		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PVSRKSO35BHPVM2LS6G7MIODY4.jpg",
-		name: "Op-Eds",
+		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7TBTSCVK4RBVXOA3NQVF265R7I.gif",
+		name: "Olivia Vella",
 		link: "#opeds"
 	},
 	// {
@@ -11,13 +12,13 @@ export const opinion_sections = [
 	// 	link: "#100-words"
 	// },
 	{
-		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TFDXCK62ENG65LVAS46KI6F35Y.png",
-		name: "Discourse & Debate",
+		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RM6BP5KZBZDQJC27R7CHEACW6Q.gif",
+		name: "Olivia Vella",
 		link: "#discourse-and-debate"
 	},
 	{
-		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/QUBVGUVW2RGWRN75ZBAZD5TAKM.jpg",
-		name: "Columns",
+		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/DWPJX7IUD5B55MVZSPC5U6LJZE.gif",
+		name: "Olivia Vella",
 		link: "#columns"
 	},
 ]

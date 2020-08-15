@@ -7,7 +7,7 @@ import GenericPanelLayout from './GenericPanelLayout';
 import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import Lightbox from '../components/Lightbox/Lightbox';
 import EditorLetter from '../components/EditorLetter';
-import { opinion_sections } from '../util/OpinionData'
+import { illustration_sections } from '../util/OpinionData'
 
 
 const letter = "If nothing else, the past several months have been an exercise in dealing with uncertainty. For all of us, the new stories, facts, and figures that each day brings threaten to upend our plans for the next.\
@@ -43,12 +43,15 @@ class IllustrationsContainer extends Component {
     render() {
         return(
             <React.Fragment>
-                <PageIntro isIllo={true} title="ILLUSTRATIONS" description={this.props.data.blurb} img_src={this.props.data.img}/>
-                <EditorLetter letter={letter} author="Helen Yang" role="Illustrations Editor"/>
+                <div>
+                    <PageIntro isIllo={true} title="ILLUSTRATIONS" description={this.props.data.blurb} img_src={this.props.data.img}/>
+                    <EditorLetter letter={letter} author="Helen Yang" role="Illustrations Editor"/>
 
-                <ExpandingColumns data = {opinion_sections}/>
-
-                    <PhotoGrid data={this.props.data.items[0].articles} openLightbox={this.openIllustrationsLightbox}/>                
+                        {this.props.data.items.map((data, i) => 
+                            <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
+                    <ExpandingColumns data = {illustration_sections}/>
+                </div>
+                    {/* <PhotoGrid data={this.props.data.items[0].articles} openLightbox={this.openIllustrationsLightbox}/>                
                     {
                         this.state.illustrationsLightboxActive && <Lightbox
                             index={this.state.lightboxIndex} 
@@ -56,7 +59,7 @@ class IllustrationsContainer extends Component {
                             onClose={this.closeIllustrationsLightbox}
                         >
                         </Lightbox>
-                    }                    
+                    }                     */}
             </React.Fragment>
         );
     }

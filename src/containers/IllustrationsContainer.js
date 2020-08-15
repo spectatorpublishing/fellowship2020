@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
+import ExpandingColumns from '../components/ExpandingColumns';
 import PageIntro from '../components/PageIntro';
 import PhotoGrid from '../components/PhotoGrid.js';
 import GenericPanelLayout from './GenericPanelLayout';
 import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import Lightbox from '../components/Lightbox/Lightbox';
 import EditorLetter from '../components/EditorLetter';
+import { opinion_sections } from '../util/OpinionData'
+
 
 const letter = "If nothing else, the past several months have been an exercise in dealing with uncertainty. For all of us, the new stories, facts, and figures that each day brings threaten to upend our plans for the next.\
 \n\nIllustration is a medium comfortable with uncertainty. Inch by inch and layer by layer, an idea is translated into a source of information and inspiration that can be shared with the world. When the unknowns of this pandemic are overwhelming and isolating, illustration can be a powerful tool for both the artist and the viewer, a tool that embodies the spirit of innovation and community the world desperately needs.\
@@ -42,6 +45,9 @@ class IllustrationsContainer extends Component {
             <React.Fragment>
                 <PageIntro isIllo={true} title="ILLUSTRATIONS" description={this.props.data.blurb} img_src={this.props.data.img}/>
                 <EditorLetter letter={letter} author="Helen Yang" role="Illustrations Editor"/>
+
+                <ExpandingColumns data = {opinion_sections}/>
+
                     <PhotoGrid data={this.props.data.items[0].articles} openLightbox={this.openIllustrationsLightbox}/>                
                     {
                         this.state.illustrationsLightboxActive && <Lightbox
@@ -57,3 +63,4 @@ class IllustrationsContainer extends Component {
 }
 
 export default IllustrationsContainer;
+

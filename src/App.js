@@ -8,12 +8,13 @@ import { GlobalStyles, Theme } from "./util/GlobalStyles";
 import HomeContainer from './containers/HomeContainer'
 import NewsContainer from './containers/NewsContainer'
 import OpinionContainer from './containers/OpinionContainer'
-import SportsContainer from './containers/SportsContainer'
-import EyeContainer from './containers/EyeContainer'
 import AEContainer from './containers/AEContainer'
 import CovidContainer from './containers/COVIDContainer'
 import GraphicsContainer from './containers/GraphicsContainer'
+import SportsEyeContainer from './containers/SportsEyeContainer'
 import IllustrationsContainer from './containers/IllustrationsContainer'
+import TestimonialsContainer from './containers/TestimonialsContainer'
+
 
 import NavBar from './components/Navigation/NavBar' 
 import Footer from './components/Footer'
@@ -30,11 +31,13 @@ class App extends Component {
     const home = () => <HomeContainer /> 
     const news = () => <NewsContainer data = {data.News} />
     const opinion = () => <OpinionContainer data={data.Opinion}/>
-    const eye = () => <EyeContainer data = {data.Eye}/>
-    const sports = () => <SportsContainer data = {data.Sports} />
     const ane = () => <AEContainer data = {data["A&E"]}/>
     const graphics = () => <GraphicsContainer data = {data.Graphics} />
     const illo = () => <IllustrationsContainer data = {data.Illustrations} />
+    const sportseye = () => <SportsEyeContainer data = {data.SportsEye} />
+    const testimonials = () => <TestimonialsContainer data = {data.Testimonials} />
+
+
 
     return (
       <PreloadProvider>
@@ -63,11 +66,13 @@ class App extends Component {
                         <Route exact path="/" component={home} />
                         <Route exact path="/news" component={news} />
                         <Route exact path="/opinion" component={opinion} />
-                        <Route exact path="/sports" component={sports} />
                         <Route exact path="/arts-and-entertainment" component={ane} />
-                        <Route exact path="/eye" component={eye} />
                         <Route exact path="/graphics" component={graphics} />
                         <Route exact path="/illustrations" component={illo} />
+                        <Route exact path="/sports-eye" component={sportseye} />
+                        <Route exact path="/testimonials" component={testimonials} />
+
+
                         {/* <Route exact path="/design" component={design} /> */}
                         
                       </Switch>

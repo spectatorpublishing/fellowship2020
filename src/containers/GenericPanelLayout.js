@@ -8,7 +8,7 @@ const mobileSize = 992
 
 const Container = styled.div`
   width: 100vw;
-  postion: relative;
+  position: relative;
 `
 
 const TopContainer = styled.div`
@@ -73,6 +73,7 @@ export default class GenericPanelLayout extends Component {
       this.setState({ isMobile: window.innerWidth <= mobileSize });
   };
 
+  // do odd even rendering based on even odd ? :
   render() {
     return (
       <React.Fragment>

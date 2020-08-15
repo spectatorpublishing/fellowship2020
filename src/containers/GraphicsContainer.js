@@ -18,49 +18,62 @@ const letter = "Often, I find that the most brilliant stories—those that empha
 \n\nThere are many more stories to come from our graphics team, and we are so thrilled to tell them.";
 
 class GraphicsContainer extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            graphicsLightboxActive: false,
-			// illustrationsLightboxActive: false,
-			lightboxIndex: 0
-        }
-        this.closeGraphicsLightbox = this.closeGraphicsLightbox.bind(this)
-		this.openGraphicsLightbox = this.openGraphicsLightbox.bind(this)
-		// this.closeIllustrationsLightbox = this.closeIllustrationsLightbox.bind(this)
-		// this.openIllustrationsLightbox = this.openIllustrationsLightbox.bind(this)
-    }
-    // closeIllustrationsLightbox(){
-	// 	this.setState({"illustrationsLightboxActive": false})
-	// }
-	closeGraphicsLightbox(){
-		this.setState({"graphicsLightboxActive": false})
-	}
-	// openIllustrationsLightbox(i){
-	// 	this.setState({"illustrationsLightboxActive": true, "lightboxIndex": i})
-	// }
-	openGraphicsLightbox(i){
-		this.setState({"graphicsLightboxActive": true, "lightboxIndex": i})
-	}
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             graphicsLightboxActive: false,
+// 			// illustrationsLightboxActive: false,
+// 			lightboxIndex: 0
+//         }
+//         this.closeGraphicsLightbox = this.closeGraphicsLightbox.bind(this)
+// 		this.openGraphicsLightbox = this.openGraphicsLightbox.bind(this)
+// 		// this.closeIllustrationsLightbox = this.closeIllustrationsLightbox.bind(this)
+// 		// this.openIllustrationsLightbox = this.openIllustrationsLightbox.bind(this)
+//     }
+//     // closeIllustrationsLightbox(){
+// 	// 	this.setState({"illustrationsLightboxActive": false})
+// 	// }
+// 	closeGraphicsLightbox(){
+// 		this.setState({"graphicsLightboxActive": false})
+// 	}
+// 	// openIllustrationsLightbox(i){
+// 	// 	this.setState({"illustrationsLightboxActive": true, "lightboxIndex": i})
+// 	// }
+// 	openGraphicsLightbox(i){
+// 		this.setState({"graphicsLightboxActive": true, "lightboxIndex": i})
+// 	}
 
 
+//     render() {
+//         return(
+//             <React.Fragment>
+//                 <PageIntro title="GRAPHICS" description={this.props.data.blurb} img_src={this.props.data.img}/>
+//                 <EditorLetter letter={letter} author="Raeedah Wahid" role="Graphics Editor"/>
+//                     <PhotoGrid data={this.props.data.items[0].articles} openLightbox={this.openGraphicsLightbox}/>                
+//                     {
+//                         this.state.graphicsLightboxActive && <Lightbox
+//                             index={this.state.lightboxIndex} 
+//                             media={this.props.data.items[0].articles} 
+//                             onClose={this.closeGraphicsLightbox}
+//                         >
+//                         </Lightbox>
+//                     }                    
+//             </React.Fragment>
+//         );
+//     }
+// }
     render() {
         return(
             <React.Fragment>
                 <PageIntro title="GRAPHICS" description={this.props.data.blurb} img_src={this.props.data.img}/>
                 <EditorLetter letter={letter} author="Raeedah Wahid" role="Graphics Editor"/>
-                    <PhotoGrid data={this.props.data.items[0].articles} openLightbox={this.openGraphicsLightbox}/>                
-                    {
-                        this.state.graphicsLightboxActive && <Lightbox
-                            index={this.state.lightboxIndex} 
-                            media={this.props.data.items[0].articles} 
-                            onClose={this.closeGraphicsLightbox}
-                        >
-                        </Lightbox>
-                    }                    
-            </React.Fragment>
-        );
-    }
+                    {/* <ScrollingNavBar menuItems={this.props.data.sections}> */}
+            {this.props.data.items.map((data, i) => 
+              <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
+          {/* </ScrollingNavBar>  */}
+      </React.Fragment>
+    );
+  }
 }
 
 export default GraphicsContainer;

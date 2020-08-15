@@ -93,7 +93,7 @@ export default class GenericPanelLayout extends Component {
     return (
       <React.Fragment>
         <MobileAndTablet>
-          <TopContainer img_src={this.props.data.img} isMobile={this.state.isMobile} />
+          {/* <TopContainer img_src={this.props.data.img} isMobile={this.state.isMobile} /> */}
           {this.props.data.articles.map((data, i) =>
             <TopContainer img_src={data.img}>
               <MobileTitle><a target="_blank" style={{ textDecoration: 'none',color:'white' }} href={data.link}>{data.title}</a></MobileTitle>
@@ -104,10 +104,10 @@ export default class GenericPanelLayout extends Component {
 
         <Desktop>
           <Container>
-            <TopContainer img_src={this.props.data.img}>
-              <Head index={0}>{this.props.data.name}</Head>
+            {/* <TopContainer img_src={this.props.data.img}> */}
+              {/* <Head index={0}>{this.props.data.name}</Head>
               <Subtitle>{this.props.data.blurb}</Subtitle>
-            </TopContainer>
+            </TopContainer> */}
             {this.props.data.articles.map((data, i) =>
               <TopContainer img_src={data.img}>
                 <Head index={i + 1}><a target="_blank" style={{ textDecoration: 'none',color:'white' }} href={data.link}>{data.title}</a></Head>

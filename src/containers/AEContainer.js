@@ -20,10 +20,10 @@ class AEContainer extends Component {
       <React.Fragment>
         <PageIntro title="A&E" description={this.props.data.blurb} img_src={this.props.data.img}/>
         <EditorLetter letter={letter} author="Abby Rooney" role="Arts & Entertainment Editor"/>
-        <ScrollingNavBar menuItems={this.props.data.sections}>
+        {/* <ScrollingNavBar menuItems={this.props.data.sections}> */}
             {this.props.data.items.map((data, i) => 
               <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
-          </ScrollingNavBar> 
+          {/* </ScrollingNavBar>  */}
       </React.Fragment>
     );
   }

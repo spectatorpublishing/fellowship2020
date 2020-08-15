@@ -15,7 +15,7 @@ const TopContainer = styled.div`
   width: 100vw;
   height: 100%;
   float: top;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${({img_src}) => img_src});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${({ img_src }) => img_src});
   background-position: center;
   background-size: cover;
 
@@ -28,11 +28,11 @@ const BottomContainer = styled.div`
 	width: 100vw;
 	float: bottom;
   background-color: ${props => props.theme.indigo};
-  
 `
 
 const Head = styled.h3`
-	padding: 12vh 2vw 4vh 8vw;
+	padding: ${({index}) => index % 2 ? ('12vh 2vw 4vh 8vw') : ('12vh 2vw 4vh 35vw')};
+  text-align: ${({index}) => index % 2 ? ('left') : ('right')};
   text-shadow: ${props => props.theme.shadow};
   color: white;
   width: 60vw;
@@ -54,49 +54,51 @@ const Subtitle = styled.p`
   padding: 0vh 0vw 12vh 8vw;
   color: white;
   width: 60vw;
-` 
+`
 
 export default class GenericPanelLayout extends Component {
-  state = { 
-      isMobile: window.innerWidth <= mobileSize,
+  state = {
+    isMobile: window.innerWidth <= mobileSize,
   }
 
   componentWillMount() {
-      window.addEventListener("resize", this.handleWindowSizeChange);
+    window.addEventListener("resize", this.handleWindowSizeChange);
   }
 
   componentWillUnmount() {
-      window.removeEventListener("resize", this.handleWindowSizeChange);
+    window.removeEventListener("resize", this.handleWindowSizeChange);
   }
 
   handleWindowSizeChange = () => {
-      this.setState({ isMobile: window.innerWidth <= mobileSize });
+    this.setState({ isMobile: window.innerWidth <= mobileSize });
   };
 
   // do odd even rendering based on even odd ? :
   render() {
     return (
       <React.Fragment>
-      <MobileAndTablet>
-        <TopContainer img_src = {this.props.data.img} isMobile = {this.state.isMobile} />
+        <MobileAndTablet>
+          <TopContainer img_src={this.props.data.img} isMobile={this.state.isMobile} />
 
-        <BottomContainer isMobile = {this.state.isMobile}>
-          <MobileHead>{this.props.data.name}</MobileHead>
-          <ImageBoxSlider data = {this.props.data.articles}/>
-        </BottomContainer>
-      </MobileAndTablet>
-      
-      <Desktop>
-        <Container>
-          <TopContainer img_src = {this.props.data.img}>
-              <Head>{this.props.data.name}</Head>
-              <Subtitle>{this.props.data.blurb}</Subtitle>
-          </TopContainer>
-          <BottomContainer>
-              <ImageBoxSlider data = {this.props.data.articles}/>
+          <BottomContainer isMobile={this.state.isMobile}>
+            <MobileHead>{this.props.data.name}</MobileHead>
+            <ImageBoxSlider data={this.props.data.articles} />
           </BottomContainer>
-        </Container>
-      </Desktop>
+        </MobileAndTablet>
+
+        <Desktop>
+          <Container>
+            <TopContainer img_src={this.props.data.img}>
+              <Head index={0}>{this.props.data.name}</Head>
+              <Subtitle>{this.props.data.blurb}</Subtitle>
+            </TopContainer>
+            {this.props.data.articles.map((data, i) =>
+              <TopContainer img_src={data.img}>
+                <Head index={i+1}>{data.title}</Head>
+              </TopContainer>
+            )}
+          </Container>
+        </Desktop>
       </React.Fragment>
     );
   }

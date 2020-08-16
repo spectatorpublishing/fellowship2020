@@ -4,6 +4,7 @@ import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro'
 import EditorLetter from '../components/EditorLetter';
+import LetterSE from '../components/LetterSE';
 import Lightbox from '../components/Lightbox/Lightbox';
 import PhotoGrid from '../components/PhotoGrid.js';
 
@@ -40,7 +41,7 @@ class NewsContainer extends Component {
       <React.Fragment>
         <div>
           <PageIntro title="NEWS" description={this.props.data.blurb} img_src={this.props.data.img}/>
-          <EditorLetter letter={letter} author="Valeria Escobar and Stephanie Lai" role="News Editors"/>
+          <LetterSE letter={letter} author="Valeria Escobar and Stephanie Lai," role="News Editors"/>
 
             {this.props.data.items.map((data, i) => 
               <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}

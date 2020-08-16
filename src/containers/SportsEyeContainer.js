@@ -4,6 +4,7 @@ import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro'
 import EditorLetter from '../components/EditorLetter';
+import LetterSE from '../components/LetterSE';
 import Lightbox from '../components/Lightbox/Lightbox';
 import PhotoGrid from '../components/PhotoGrid.js';
 
@@ -47,8 +48,7 @@ class SportsEyeContainer extends Component {
       <React.Fragment>
         <div>
           <PageIntro title="SPORTS+EYE" description={this.props.data.blurb} img_src={this.props.data.img}/>
-          <EditorLetter letter={letter} author="Eve Washington" role="Managing Editor of The Eye"/>
-          <EditorLetter letter={letter2} author="Lizzie Karpen" role="Sports Editor"/>
+          <LetterSE letter={letter} author="Eve Washington," role="Managing Editor of The Eye" author1="Lizzie Karpen," role1="Sports Editor"/>
 
             {this.props.data.items.map((data, i) => 
               <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}

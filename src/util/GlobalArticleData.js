@@ -54,12 +54,6 @@ const data = {
             "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/S2XK2EVJYJEMFEYTQB4I6VPGTE.jpg",
             "blurb": "Who is impacted by the University’s reopening plans and how do they play out? Spectator’s news fellows look to consequential conversations between students, faculty and the community. ",
             "articles": [{
-                    "title": "Columbia asked students to pledge to ensure a campus safe from COVID-19. Not everyone is on board.",
-                    "author": "Claire Schweitzer and Aili Hou", 
-                    "link": "https://www.columbiaspectator.com/news/2020/07/28/columbia-asked-students-to-pledge-to-ensure-a-campus-safe-from-covid-19-not-everyone-is-on-board/",
-                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/GPCEDMCMZVCMZK4DG53TRXLPZY.jpg"
-                  },
-                  {
                     "title": "COVID-19 pandemic and varsity rule leave Columbia women’s club soccer’s future uncertain",
 	                  "author": "Jorge Hernandez",
                     "link": "https://www.columbiaspectator.com/sports/2020/08/13/covid-19-pandemic-and-varsity-rule-leave-columbia-womens-club-soccers-future-uncertain/",

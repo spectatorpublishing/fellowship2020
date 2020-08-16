@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro'
+<<<<<<< HEAD
 import MultipleEditorsLetter from '../components/MultipleEditorsLetter';
+=======
+import EditorLetter from '../components/EditorLetter';
+import LetterSE from '../components/LetterSE';
+>>>>>>> 4e6a98a17beb197d16735a563d05d67babc06d17
 import Lightbox from '../components/Lightbox/Lightbox';
 import PhotoGrid from '../components/PhotoGrid.js';
 
@@ -47,7 +52,11 @@ class SportsEyeContainer extends Component {
       <React.Fragment>
         <div>
           <PageIntro title="SPORTS+EYE" description={this.props.data.blurb} img_src={this.props.data.img}/>
+<<<<<<< HEAD
           <MultipleEditorsLetter letter={letter} author="Eve Washington" role="Managing Editor of The Eye" author2="Lizzie Karpen" role2="Sports Editor"/>
+=======
+          <LetterSE letter={letter} author="Eve Washington," role="Managing Editor of The Eye" author1="Lizzie Karpen," role1="Sports Editor"/>
+>>>>>>> 4e6a98a17beb197d16735a563d05d67babc06d17
 
             {this.props.data.items.map((data, i) => 
               <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}

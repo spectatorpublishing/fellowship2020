@@ -58,25 +58,49 @@ const data = {
                     "author": "Claire Schweitzer and Aili Hou", 
                     "link": "https://www.columbiaspectator.com/news/2020/07/28/columbia-asked-students-to-pledge-to-ensure-a-campus-safe-from-covid-19-not-everyone-is-on-board/",
                     "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/GPCEDMCMZVCMZK4DG53TRXLPZY.jpg"
-                },
-                {
-                  "title": "Incoming out-of-state students express financial and logistical concerns over New York quarantine advisory",
-                  "author": "Talia Abrahamson and Victoria Choe",
-                  "link": "https://www.columbiaspectator.com/news/2020/07/28/incoming-out-of-state-students-express-financial-and-logistical-concerns-over-new-york-quarantine-advisory/",
-                  "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YBXWOMQ36RF7RBYPLVXLJCL3FI.png",
-                },
-                {
-                  "title": "The Open Streets program could facilitate social distancing near campus. Its success depends on the community.",
-                  "author": "Katherine Nessel and Kathy Fang",
-                  "link": "https://www.columbiaspectator.com/news/2020/07/31/the-open-streets-program-could-facilitate-social-distancing-near-campus-its-success-depends-on-the-community/",
-                  "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PFMF5YOOYNBFJJAKSQUUIMH45U.JPG" 
-                
-                },
-                {
-                  "title": "Barnard students express financial and logistical concerns over quarantining off campus before move-in",
-                  "author": "Talia Abrahamson",
-                  "link": "https://www.columbiaspectator.com//news/2020/08/05/barnard-students-express-financial-and-logistical-concerns-over-quarantining-off-campus-before-move-in/",
-                  "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UEXEQ3KDFBAXHNUHCDU4DCMVDQ.jpg" 
+                  },
+                  {
+                    "title": "COVID-19 pandemic and varsity rule leave Columbia women’s club soccer’s future uncertain",
+	                  "author": "Jorge Hernandez",
+                    "link": "https://www.columbiaspectator.com/sports/2020/08/13/covid-19-pandemic-and-varsity-rule-leave-columbia-womens-club-soccers-future-uncertain/",
+                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TO26HOWZZVFUZA3GE6WW5XYF6U.png"
+                  },
+                  {
+                    "title": "A Hug-Less Columbia",
+                    "author": "Ava Frisina and Cheryn Hong",
+                    "link": "https://www.columbiaspectator.com/the-eye/2020/08/07/a-hug-less-columbia/",
+                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/CDMJMLF4KBGMJMFBG2OZXOAK24"
+                  },
+                  { 
+                    "title": "Columbia First-Year Hong Kongers Reflect: In Both Hong Kong and America, Uncertainties Abound",
+                    "author": "Eleanor Lin",
+                    "link": "https://www.columbiaspectator.com/the-eye/2020/08/06/columbia-first-year-hong-kongers-reflect-in-both-hong-kong-and-america-uncertainties-abound/", 
+                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/GYBWOAEKRREB7HEWYAYOKFTGHU.png"
+                  },
+                  {
+                    "title": "Fostering Virtual Intimacy Over an Uncertain Future",
+                    "author": "Munirat Suleiman",
+                    "link": "https://www.columbiaspectator.com/the-eye/2020/08/15/fostering-virtual-intimacy-over-an-uncertain-future/",
+                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/22UK54PWCBFJRJNLY7X5GJLGPI.png"
+                  },
+                  { 
+                    "title": "Columbia’s Campus Myths Reveal More Truth Than Expected",
+                    "author": "Shreya Kumar",
+                    "link": "https://www.columbiaspectator.com/the-eye/2020/08/15/columbias-campus-myths-reveal-more-truth-than-expected/",
+                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PAATHX3JG5BY5G27ZJQMMGPB3E.gif"
+                  },
+                  { 
+                    "title": "International Students and Social Media: Building a Community",
+                    "author": "Camila Braga",
+                    "link": "https://www.columbiaspectator.com/the-eye/2020/08/15/columbias-campus-myths-reveal-more-truth-than-expected/",
+                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JZMSA6EVLJFEDDRHGXNYZIBZTE"
+                  },
+                  { 
+                    "title": "A Cheesy Realization",
+                    "author": "Carla Villafane",
+                    "link": "https://www.columbiaspectator.com/the-eye/2020/08/15/a-cheesy-realization/",
+                    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TSX3EKS5FJD33JAPFMS4NZKZXY" 
+
                 
                 }
             ]
@@ -163,9 +187,9 @@ const data = {
                       "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RM6BP5KZBZDQJC27R7CHEACW6Q.gif"
                     },
                     {
-                      "title": "Working title",
+                      "title": "Fraternities are out of control. Regulation is key.",
                       "author": "Jeffrey Xiong",
-                      "link": "",
+                      "link": "https://medium.com/@xiong.jeffrey314/fraternities-are-out-of-control-regulation-is-key-93a1e5bb8a83",
                       "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7TBTSCVK4RBVXOA3NQVF265R7I.gif"
                     },
                   ]

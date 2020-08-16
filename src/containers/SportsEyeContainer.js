@@ -7,11 +7,18 @@ import EditorLetter from '../components/EditorLetter';
 import Lightbox from '../components/Lightbox/Lightbox';
 import PhotoGrid from '../components/PhotoGrid.js';
 
-const letter = "Reporting for college newspapers places journalists in a position unlike any other professional setting. These fellows have had to ask themselves the same questions that reporters ask each other.\
-\n\nWhile Columbia draws students from a diverse range of backgrounds and perspectives, we are all members of an institution whose historical and economic prominence in its surrounding community has lent itself to consequential decision-making. Alongside Spectator reporters, the fellows have had to think deeply about their role as Columbia students before even stepping foot on campus. Despite our expectations of what constitutes the “normal” American college experience—shaped by pictures in vintage yearbooks and Instagram posts—our experiences as students at Columbia are by no means customary. While our society and culture have led us to believe that the experiences we have are universal, the majority of the country’s high school graduates never attend a four-year institution, and even those who do are not ensured a residential experience.\
-\n\nJust when we thought that the college memories we were planning to make were guaranteed, the pandemic forced us to reevaluate our expectations and examine our privilege. Moreover, Morningside Heights’ urban landscape forces the realization that our experiences as students do not exist in isolation. The surrounding communities of color, especially the Black and Latinx communities, continue to suffer from the legacy of Columbia’s property rights and history of gentrification, which have led to segregational practices that limit economic mobility, housing security, and healthcare access.\
-\n\nThe news fellows have spoken to leading experts, biked across New York City, and used their analytical skills to point them to issues that would otherwise not be addressed. We have seen these reporters seek collaborations with our graphics and illustrations teams—a testament to the fact that a news journalist cannot exist in a vacuum of the newsroom. Our fellows have shown that they know how to produce content that reaches and engages our audience.\
-\n\nWe are incredibly grateful for the opportunity to use Spectator’s outreach to showcase their work. Everything they have done has clearly manifested out of care for communities inside and outside Columbia.";
+const letter = "Throughout the course of this fellowship, we challenged our 12 bright-eyed fellows for The Eye and Sports to answer this question: What does it mean to write a feature?\
+\n\nTo challenge an institution? To tell a story? To profile an event? To share a resource? To rethink how we look at things?\
+\n\nHopefully, they did not find an answer. Because there is none.\
+\n\nFeature stories do all of those things and more. They cannot be limited by topic or section, and they force readers to confront issues and ideas as unique as the writers are themselves. We tried to teach our fellows how to write and report for a feature, but the reality is that feature journalism is ever-changing.\
+\n\nWhat people can do with video, audio, data, graphics, and photography continues to develop each and every day. Throughout this fellowship, our writers learned how to use different mediums to tell stories and how each tool is able to shift the way a reader encounters their work. They learned how to humanize issues and how to ethically tell the stories of their own experiences and those of others.\
+\n\nJournalism and the topics it covers are constantly shifting, and no one knows this better than our fellows, whose first year at Columbia will be different than they could have imagined. The fellows were thrust into what remains relatively unknown, and in the process of figuring it out, have written stories that reflect the realities of living in this distinct period.\
+\n\nTheir work speaks for itself.\
+\n\nThe Eye and Sports fellows wrote about everything from how COVID-19 has changed the experience and significance of hugging to how incoming first-years from Hong Kong are grappling with not only political unrest at home but also a raging global pandemic. They examined how unrecognized sports teams will most likely be unable to sustain themselves in the aftermath of the COVID-19 pandemic. They looked at Columbia itself—how its architecture alienates Harlem residents and how test-optional policies will impact the diversity in next year’s incoming students.\
+\n\nThey also took a step back and reflected on their own experiences as especially unique newcomers—writing personally about what can be seen from Columbia urban legends and how technology and social media help connect a physically distanced class of students.\
+\n\nThese fellows set off to answer a question with no answers, and for that, we applaud them. While you will not be able to properly answer the question of what it means to write a feature, after reading these articles, you will be left with a better understanding of the Columbia community through the eyes of these fellows’ hard work.";
+
+const letter2 = ""
 
 class SportsEyeContainer extends Component {
   constructor() {
@@ -40,7 +47,8 @@ class SportsEyeContainer extends Component {
       <React.Fragment>
         <div>
           <PageIntro title="SPORTS+EYE" description={this.props.data.blurb} img_src={this.props.data.img}/>
-          <EditorLetter letter={letter} author="Valeria Escobar and Stephanie Lai" role="News Editors"/>
+          <EditorLetter letter={letter} author="Eve Washington" role="Managing Editor of The Eye"/>
+          <EditorLetter letter={letter2} author="Lizzie Karpen" role="Sports Editor"/>
 
             {this.props.data.items.map((data, i) => 
               <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}

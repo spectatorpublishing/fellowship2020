@@ -242,7 +242,7 @@ const data = {
         ]
     },
     "Testimonials": {
-      "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/INJWF2QRJRBCRI26EAVTLMVMIE.jpg ",
+      "img": "",
       sections: [{
               "name": "Student Life and City",
               "link": "#Student-Life-and-City"

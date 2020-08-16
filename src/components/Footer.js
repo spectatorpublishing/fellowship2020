@@ -21,12 +21,15 @@ const Center = styled.div`
 const footer = (props) =>{
   return (
     <div className="Footer">
-      <Center>
-        <p>PRODUCED BY</p>
-        <Logo src={CDS} alt="scroll"/>      
-      </Center>
+<Center>
+<p>PRODUCED BY</p>
+<a href="https://www.columbiaspectator.com/">
+<Logo src={CDS} />
+</a>
+</Center>
     </div>
   );
 }
 
 export default footer;
+

@@ -12,13 +12,13 @@ export const GlobalStyles = createGlobalStyle`
     font-style: italic;
   }
   @font-face {
-    font-family: 'Branding';
-    src: url('https://s3.amazonaws.com/spectator-fonts/Branding-Medium.eot');
+    font-family: 'Suez One', 'SuezOne-Regular';
+    src: url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
     src: url('https://s3.amazonaws.com/spectator-fonts/Branding-Medium.eot?#iefix') format('embedded-opentype'),
-        url('https://s3.amazonaws.com/spectator-fonts/Branding-Medium.woff2') format('woff2'),
-        url('https://s3.amazonaws.com/spectator-fonts/Branding-Medium.woff') format('woff'),
-        url('https://s3.amazonaws.com/spectator-fonts/Branding-Medium.ttf') format('truetype');
-    font-weight: 500;
+        url('https://fonts.gstatic.com/s/suezone/v4/taiJGmd_EZ6rqscQgOFMmouC-50xUK4.woff2') format('woff2'),
+        // url('https://s3.amazonaws.com/spectator-fonts/Branding-Medium.woff') format('woff'),
+        // url('https://s3.amazonaws.com/spectator-fonts/Branding-Medium.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
   }
   @font-face {
@@ -61,7 +61,7 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 900;
     font-style: normal;
   }
-    
+
   html {
     font-family: 'Founders Grotesk', sans-serif;
     font-weight: 300;
@@ -78,8 +78,8 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
   }
   h1 {
-    font-family: 'Branding', sans-serif;
-    font-weight: 900;
+    font-family: 'Suez One', sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 8rem;
     letter-spacing: .3rem;
@@ -100,8 +100,8 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   h3 {
-    font-family: 'Branding', sans-serif;
-    font-weight: 900;
+    font-family: 'Suez One', sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 3rem;
     letter-spacing: .2rem;
@@ -122,8 +122,8 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   h5 {
-    font-family: 'Branding', sans-serif;
-    font-weight: bold;
+    font-family: 'Suez One', sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-size: 1.2rem;
     margin: 0;
@@ -136,9 +136,9 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   p {
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
     font-size: 1rem;
     margin: 0;
   }

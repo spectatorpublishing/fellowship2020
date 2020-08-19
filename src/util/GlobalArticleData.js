@@ -1,6 +1,6 @@
 const data = {
   "News": {
-      "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/INJWF2QRJRBCRI26EAVTLMVMIE.jpg ",
+      "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/XJZITA5QXRCSTIEUMZT2ZLNOJ4.jpg",
       sections: [{
               "name": "Student Life and City",
               "link": "#Student-Life-and-City"
@@ -42,7 +42,7 @@ const data = {
       ]
   },
   "SportsEye": {
-    "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/INJWF2QRJRBCRI26EAVTLMVMIE.jpg ",
+    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TMMYEPQ3ONBD3JQ6XBIN66ESPE.jpg",
     sections: [{
             "name": "Student Life and City",
             "link": "#Student-Life-and-City"
@@ -102,7 +102,7 @@ const data = {
     ]
 },
     "A&E": {
-        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/7YQAUCXS7BFHBBQZNURY7PNW7A.jpg",
+        "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/XN4YNNTZYBFSFDGYDLIBZII5PU.jpg",
         sections: [{
                 "name": "Virtual Art",
                 "link": "#virtual-art"
@@ -162,7 +162,7 @@ const data = {
         ]
     },
     "Opinion": {
-        "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SLKRYBOP4FHWVABUCFXNPNIDGU.gif",
+        "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/CFANMUBIFRFGLHBFHGLV3QJBII.png",
         "items": [{
                 "name": "OP-EDS",
                 "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PVSRKSO35BHPVM2LS6G7MIODY4.jpg",
@@ -218,31 +218,31 @@ const data = {
         ]
     },
   "Graphics": {
-      "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/IQD4GSHP4VDOBDH6NK5XOL7V6U.gif",
+      "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MJQDZFUR2NDHVEJL54RSHBEWQA.png",
       "items": [{
               "name": "Data Visualization",
               "articles": [{
-                "title": "The Open Streets program could facilitate social distancing near campus. Its success depends on the community.",
-                "front_img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L64XJYAWLRHQ3J5XHTH6RR63M4.png",
-                "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L64XJYAWLRHQ3J5XHTH6RR63M4.png",
-                "description": "Interactive maps were built using Mapbox GL JS to visualize the Open Streets across Manhattan, New York.",
-                "link": "https://www.columbiaspectator.com/news/2020/07/31/the-open-streets-program-could-facilitate-social-distancing-near-campus-its-success-depends-on-the-community/",
-                "author": "Melissa Wang" 
-              },  
-              {
                 "title": "A COVID-19 vaccine is on its way, but a majority of West Harlem residents won’t see it anytime soon",
                 "front_img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WKRBHEZMOVHLBOS3NZSM2TVJ7I.png",
                 "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WKRBHEZMOVHLBOS3NZSM2TVJ7I.png",
                 "description": "COVID-19 vaccines are in phase testing and are aimed to be mass-produced by 2021. However, when vaccines do become available in New York City, low-income communities may be the last to receive them.",
                 "link": "https://www.columbiaspectator.com/news/2020/08/04/a-covid-19-vaccine-is-on-its-way-but-a-majority-of-west-harlem-residents-wont-see-it-anytime-soon/",
-                "author": "Liz Commisso and Chloe Kok"
-                
-              }]
+                "author": "Liz Commisso and Chloe Kok" 
+                },
+                {
+                "title": "The Open Streets program could facilitate social distancing near campus. Its success depends on the community.",
+                "front_img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L64XJYAWLRHQ3J5XHTH6RR63M4.png",
+                "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L64XJYAWLRHQ3J5XHTH6RR63M4.png",
+                "description": "Interactive maps were built using Mapbox GL JS to visualize the Open Streets across Manhattan, New York.",
+                "link": "https://www.columbiaspectator.com/news/2020/07/31/the-open-streets-program-could-facilitate-social-distancing-near-campus-its-success-depends-on-the-community/",
+                "author": "Graphics by Melissa Wang" 
+              },  
+              ]
           },
       ]
   },
  "Illustrations": {
-        "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/STTVVI5JGRAQNCLNFJ4HLRT2EA.gif",
+        "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EQATYG35LRAXFM37AOTKORLGYY.png",
         sections: [],
         "items": [
             {

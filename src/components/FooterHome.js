@@ -71,32 +71,35 @@ const footerHome = (props) =>{
         <Desktop>
           <Names>
           <Column>
-            <RoleHeading>Designed By</RoleHeading>
-            <Line>Shannon Hui, <Role>Product Manager</Role></Line> 
-            <Line>David Wang, <Role>Product Designer</Role></Line> 
-            <Line>Kevin Li, <Role>Former Head of Product</Role></Line> 
+            <RoleHeading>Fellowship Edition By</RoleHeading>
+            <Line>Sarah Braka, <Role>Program Director, Copy Queen</Role></Line> 
+            <Line>Raeedah Wahid, <Role>Graphics Editor</Role></Line> 
           </Column>
 
           <Column>
-            <RoleHeading>Developed By</RoleHeading>
-            <Line>Yulong Li, <Role>Engineering Manager</Role></Line> 
-            <Line>Amina Assal, <Role>Developer</Role></Line> 
-            <Line>Julie Song, <Role>Developer</Role></Line> 
-            <Line>Stacy Tao, <Role>Developer</Role></Line> 
+            <RoleHeading>Development Assistance</RoleHeading>
+            <Line>Hong Sen Du, <Role>Head of Newsroom Development</Role></Line> 
+            <Line>Jennifer Wang, <Role>Engineering Fellow</Role></Line> 
+            <Line>Michael Li, <Role>Developer</Role></Line> 
+            <Line>Emme Pogue, <Role>Best Friend</Role></Line> 
           </Column>
-          <Column>
+          {/* <Column>
             <RoleHeading>&nbsp;</RoleHeading>
             <Line>Wendy Wang, <Role>Developer</Role></Line> 
             <Line>Yunsu Kim, <Role>Developer</Role></Line> 
             <Line>Daniel Kim, <Role>Developer</Role></Line> 
             <Line>Arsalaan Ansari, <Role>Former Head of Engineering</Role></Line> 
-          </Column>
-          <Column>
-              <RoleHeading>2019-20 Edition By</RoleHeading>
-              <Line>Carl Dobrović, <Role>Head of Engineering</Role></Line> 
-              <Line>David Wang, <Role>Head of Product</Role></Line> 
-              <Line>Raeedah Wahid, <Role>Graphics Editor</Role></Line> 
-          </Column>        
+          </Column> */}
+          {/* <Column>
+              <RoleHeading>Template By</RoleHeading>
+              <Line>Shannon Hui, <Role></Role></Line> 
+              <Line>David Wang, <Role></Role></Line> 
+              <Line>Kevin Li, <Role></Role></Line>
+              <Line>Yulong Li, <Role></Role></Line> 
+              <Line>Amina Assal, <Role></Role></Line> 
+              <Line>Julie Song, and <Role></Role></Line> 
+              <Line>Stacy Tao <Role></Role></Line> 
+          </Column>         */}
 
         </Names>
         </Desktop>
@@ -104,32 +107,18 @@ const footerHome = (props) =>{
         <Tablet>
           <Names>
           <Column>
-            <RoleHeading>Designed By</RoleHeading>
-            <Line>Shannon Hui, <Role>Product Manager</Role></Line> 
-            <Line>David Wang, <Role>Product Designer</Role></Line> 
-            <Line>Kevin Li, <Role>Former Head of Product</Role></Line> 
+            <RoleHeading>Fellowship Edition By</RoleHeading>
+            <Line>Sarah Braka, <Role>Program Director</Role></Line> 
+            <Line>Raeedah Wahid, <Role>Graphics Editor</Role></Line> 
           </Column>
 
           <Column>
-            <RoleHeading>Developed By</RoleHeading>
-            <Line>Yulong Li, <Role>Engineering Manager</Role></Line> 
-            <Line>Amina Assal, <Role>Developer</Role></Line> 
-            <Line>Julie Song, <Role>Developer</Role></Line> 
-            <Line>Stacy Tao, <Role>Developer</Role></Line> 
-          </Column>
-          <Column>
-            <RoleHeading>&nbsp;</RoleHeading>
-            <Line>Wendy Wang, <Role>Developer</Role></Line> 
-            <Line>Yunsu Kim, <Role>Developer</Role></Line> 
-            <Line>Daniel Kim, <Role>Developer</Role></Line> 
-            <Line>Arsalaan Ansari, <Role>Former Head of Engineering</Role></Line> 
-          </Column>
-          <Column>
-              <RoleHeading>2019-20 Edition By</RoleHeading>
-              <Line>Carl Dobrović, <Role>Head of Engineering</Role></Line> 
-              <Line>David Wang, <Role>Head of Product</Role></Line> 
-              <Line>Raeedah Wahid, <Role>Graphics Editor</Role></Line> 
-          </Column>        
+            <RoleHeading>Development Assistance</RoleHeading>
+            <Line>Hong Sen Du, <Role>Head of Newsroom Development</Role></Line> 
+            <Line>Jennifer Wang, <Role>Engineering Fellow</Role></Line> 
+            <Line>Michael Li, <Role>Developer</Role></Line> 
+            <Line>Emme Pogue <Role></Role></Line> 
+          </Column>       
         </Names>
         </Tablet>
 
@@ -140,77 +129,35 @@ const footerHome = (props) =>{
           <RoleHeading>Designed By</RoleHeading>
           <Row>
             <Column>
-            <Line>Shannon Hui,</Line> 
-            <Role>Product Manager</Role>
+            <Line>Sarah Braka,</Line> 
+            <Role>Program Director</Role>
             </Column>
             <Column>
-            <Line>David Wang,</Line> 
-            <Role>Product Designer</Role>
-            </Column>
-          </Row>
-          <Row continuation={true} >
-            <Column>
-            <Line>Kevin Li,</Line> 
-            <Role>Former Head of Product</Role>
-            </Column>
-            <Column>
+            <Line>Raeedah Wahid,</Line> 
+            <Role>Graphics Editor</Role>
             </Column>
           </Row>
           
-          <RoleHeading>Developed By</RoleHeading>
+          <RoleHeading>Development Assistance</RoleHeading>
           <Row>
             <Column>
-            <Line>Yulong Li,</Line> 
-            <Role>Engineering Manager</Role>
+            <Line>Hong Sen Du,</Line> 
+            <Role>Head of Newsroom Development</Role>
             </Column>
             <Column>
-            <Line>Amina Assal,</Line> 
-            <Role>Developer</Role>
+            <Line>Jennifer Wang,</Line> 
+            <Role>Engineering Fellow</Role>
             </Column>
           </Row>
           <Row continuation={true} >
             <Column>
-            <Line>Julie Song,</Line> 
+            <Line>Michael Li,</Line> 
             <Role>Developer</Role>
             </Column>
             <Column>
-            <Line>Stacy Tao,</Line> 
-            <Role>Developer</Role>
+            <Line>Emme Pogue</Line> 
+            <Role></Role>
             </Column>
-          </Row>
-          <Row continuation={true} >
-            <Column>
-            <Line>Wendy Wang,</Line> 
-            <Role>Developer</Role>
-            </Column>
-            <Column>
-            <Line>Yunsu Kim,</Line> 
-            <Role>Developer</Role>
-            </Column>
-          </Row>
-          <Row continuation={true} >
-            <Column>
-            <Line>Daniel Kim,</Line> 
-            <Role>Developer</Role>
-            </Column>
-            <Column>
-            <Line>Arsalaan Ansari,</Line> 
-            <Role>Former Head of Engineering</Role>
-            </Column>
-          </Row>
-
-          <RoleHeading>2019-20 Edition By</RoleHeading>
-            <Row continuation={true} >
-              <Column>
-              <Line>Carl Dobrović,</Line> 
-              <Role>Head of Engineering</Role>
-              </Column>
-              <Column>
-              <Line>David Wang,</Line> 
-              <Role>Head of Product</Role>
-              <Line>Raeedah Wahid,</Line> 
-              <Role>Graphics Editor</Role>
-              </Column>
           </Row>
         </Names>
         </Mobile>

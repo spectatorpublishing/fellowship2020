@@ -10,12 +10,13 @@ const Article = styled.div`
   top: 30%;
   left: ${props => props.left}vw;
 `
-const Title = styled.h4`
+const Title = styled.p`
+  font-size: 1rem;
   width: 60vw;
   margin: 5vh 20vw;
   color: white;
 `
-const Author = styled.h5` 
+const Author = styled.p` 
   width: 60vw;
   margin: 5vh 20vw;
   color: white;

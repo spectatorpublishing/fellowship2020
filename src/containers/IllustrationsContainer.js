@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 
 import ExpandingColumns from '../components/ExpandingColumns';
 import PageIntro from '../components/PageIntro';
-import PhotoGrid from '../components/PhotoGrid.js';
 import GenericPanelLayout from './GenericPanelLayout';
-import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
-import Lightbox from '../components/Lightbox/Lightbox';
 import EditorLetter from '../components/EditorLetter';
 import { illustration_sections } from '../util/OpinionData'
 
@@ -18,27 +15,35 @@ class IllustrationsContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            // graphicsLightboxActive: false,
 			illustrationsLightboxActive: false,
 			lightboxIndex: 0
         }
-        // this.closeGraphicsLightbox = this.closeGraphicsLightbox.bind(this)
-		// this.openGraphicsLightbox = this.openGraphicsLightbox.bind(this)
 		this.closeIllustrationsLightbox = this.closeIllustrationsLightbox.bind(this)
 		this.openIllustrationsLightbox = this.openIllustrationsLightbox.bind(this)
     }
     closeIllustrationsLightbox(){
 		this.setState({"illustrationsLightboxActive": false})
 	}
-	// closeGraphicsLightbox(){
-	// 	this.setState({"graphicsLightboxActive": false})
-	// }
 	openIllustrationsLightbox(i){
 		this.setState({"illustrationsLightboxActive": true, "lightboxIndex": i})
-	}
-	// openGraphicsLightbox(i){
-	// 	this.setState({"graphicsLightboxActive": true, "lightboxIndex": i})
-	// }
+    };
+    
+// let IntroText = styled.div`
+//     width: 100%;
+//     margin-left: 10vw;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     position: relative;
+//     padding-top: 1rem;
+//     padding-bottom: 3rem;
+// `;
+
+// let TextContain = styled.h3`
+//      width: 60vw;
+//      margin: 5vh 20vw;
+//      color: white;
+// `;
 
     render() {
         return(
@@ -49,17 +54,11 @@ class IllustrationsContainer extends Component {
 
                         {this.props.data.items.map((data, i) => 
                             <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
+                    {/* <IntroText>
+                            <TextContain>The below gifs were created by illustrations fellow Olivia Vella to accompany the op-eds found on the opinion page.</TextContain>
+                    </IntroText> */}
                     <ExpandingColumns data = {illustration_sections}/>
                 </div>
-                    {/* <PhotoGrid data={this.props.data.items[0].articles} openLightbox={this.openIllustrationsLightbox}/>                
-                    {
-                        this.state.illustrationsLightboxActive && <Lightbox
-                            index={this.state.lightboxIndex} 
-                            media={this.props.data.items[0].articles} 
-                            onClose={this.closeIllustrationsLightbox}
-                        >
-                        </Lightbox>
-                    }                     */}
             </React.Fragment>
         );
     }

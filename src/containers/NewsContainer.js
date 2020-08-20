@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 
-import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro'
 import MultipleEditorsLetter from '../components/MultipleEditorsLetter';
-import EditorLetter from '../components/EditorLetter';
-import Lightbox from '../components/Lightbox/Lightbox';
-import PhotoGrid from '../components/PhotoGrid.js';
 
 const letter = "Reporting for college newspapers places journalists in a position unlike any other professional setting. These fellows have had to ask themselves the same questions that reporters ask each other.\
 \n\nWhile Columbia draws students from a diverse range of backgrounds and perspectives, we are all members of an institution whose historical and economic prominence in its surrounding community has lent itself to consequential decision-making. Alongside Spectator reporters, the fellows have had to think deeply about their role as Columbia students before even stepping foot on campus. Despite our expectations of what constitutes the “normal” American college experience—shaped by pictures in vintage yearbooks and Instagram posts—our experiences as students at Columbia are by no means customary. While our society and culture have led us to believe that the experiences we have are universal, the majority of the country’s high school graduates never attend a four-year institution, and even those who do are not ensured a residential experience.\
@@ -18,7 +14,6 @@ class NewsContainer extends Component {
   constructor() {
       super()
       this.state = {
-        // graphicsLightboxActive: false,
         illustrationsLightboxActive: false,
         lightboxIndex: 0
       }
@@ -35,7 +30,6 @@ class NewsContainer extends Component {
 	}
 
   render() {
-    //
         
     return (
       <React.Fragment>

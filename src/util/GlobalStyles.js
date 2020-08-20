@@ -61,6 +61,16 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 900;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXiWtFCc.woff2') format('woff2')
+  }
+  @font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v7/zYXgKVElMYYaJe8bpLHnCwDKhd_eFaxOedfTDw.woff2') format('woff2');
+  }
 
   html {
     font-family: 'Founders Grotesk', sans-serif;
@@ -81,7 +91,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Suez One', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 8rem;
     letter-spacing: .3rem;
     margin: 0;
     @media only screen and (max-width: 767px) {
@@ -136,10 +146,10 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0;
   }
 `

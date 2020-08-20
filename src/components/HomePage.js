@@ -1,73 +1,62 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import whitemasthead from "../assets/whitemasthead.png";
 import { MobileAndTablet, Desktop } from "react-responsive-simple";
 import "react-responsive-carousel/lib/styles/carousel.css";
-import { Carousel } from "react-responsive-carousel";
-import HomepagePhotos from "../util/HomepagePhotos";
-import { NavHashLink } from "react-router-hash-link";
 
 let MobileContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  // height: 50vh;
 `;
 let HomePageContainer = styled(MobileContainer)`
   max-height: 65vw;
   display: flex;
+  justify-content: center;
   background-size: cover;
+  flex-direction: column;
 `;
 let LeftDiv = styled.div`
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-center;
-  @media (max-width: 991px) {
-    margin-top: 40vh;
-    margin-left: -20vw;
-  }
+  height: 100vh;
+  line-height: 10vw;
 `;
 let TitleDiv = styled.div`
   text-align: center;
 `;
 let Title = styled.h1`
+  font-size: 10vw;
   word-spacing: 100vw;
-  line-height: 8rem;
+  // line-height: normal;
   color: ${(props) => props.theme.white};
   text-shadow: ${(props) => props.theme.shadow};
 `;
 let MobileTitle = styled(Title)`
   margin-top: 1rem;
-  line-height: 4rem;
+  // line-height: normal;
 `;
 let YearDiv = styled.div`
   text-align: center;
 `;
 let Year = styled.h3`
-  font-size: 75px;
+  font-size: 7vw;
+  line-height: 3vw;
   color: ${(props) => props.theme.white};
   text-shadow: ${(props) => props.theme.shadow};
 `;
 
-const Wrapper = styled.div`
-  @media (max-width: 991px) {
-    width: 100vw;
-    overflow: hidden;
-  }
+let Image = styled.img`
+  z-index: -1;
+  // height: 100%;
+  width: 100%;
+  // overflow: hidden;
+  // object-fit: cover;
 `;
 
-let CarouselWrapper = styled.div`
-  position: absolute;
-  z-index: -1;
-  width: 100vw;
-  @media (max-width: 991px) {
-    height: 100vh;
-    width: auto;
-    overflow: hidden;
-    & * {
-      height: 100%;
-      object-fit: cover;
-    }
-  }
+let TopBox = styled.div`
+  height: 3rem;
 `;
 
 export default class HomePage extends Component {
@@ -80,27 +69,9 @@ export default class HomePage extends Component {
       <React.Fragment>
         <MobileAndTablet>
           <MobileContainer>
+          <TopBox></TopBox>
             <HomePageContainer>
-              <Wrapper>
-                <CarouselWrapper>
-                  <Carousel
-                    showArrows={false}
-                    showStatus={false}
-                    showThumbs={false}
-                    autoPlay={true}
-                    infiniteLoop={true}
-                    interval={4000}
-                    showIndicators={false}
-                    width={"100%"}
-                  >
-                    {HomepagePhotos.map((el, i) => (
-                      <div key={i}>
-                        <img src={el} alt="carousel-i" />
-                      </div>
-                    ))}
-                  </Carousel>
-                </CarouselWrapper>
-              </Wrapper>
+              <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VFETCOFZE5FJFJTL6XAD64BWAU.png"/>
               <LeftDiv>
                 <YearDiv>
                   <Year>2020</Year>
@@ -114,25 +85,8 @@ export default class HomePage extends Component {
         </MobileAndTablet>
 
         <Desktop>
-          <CarouselWrapper>
-            <Carousel
-              showArrows={false}
-              showStatus={false}
-              showThumbs={false}
-              autoPlay={true}
-              infiniteLoop={true}
-              interval={4000}
-              showIndicators={false}
-              width={"100%"}
-            >
-              {HomepagePhotos.map((el, i) => (
-                <div key={i}>
-                  <img src={el} alt="carousel-i" />
-                </div>
-              ))}
-            </Carousel>
-          </CarouselWrapper>
           <HomePageContainer>
+            <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VFETCOFZE5FJFJTL6XAD64BWAU.png"/>
             <LeftDiv>
               <YearDiv>
                 <Year>2020</Year>

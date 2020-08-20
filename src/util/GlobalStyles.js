@@ -81,7 +81,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Suez One', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 8rem;
+    font-size: 2rem;
     letter-spacing: .3rem;
     margin: 0;
     @media only screen and (max-width: 767px) {

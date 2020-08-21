@@ -7,8 +7,8 @@ import EditorLetter from '../components/EditorLetter';
 import { illustration_sections } from '../util/OpinionData'
 import styled from 'styled-components';
 
-
-let NavContainer = styled.div `
+// this doesn't work on mobile so we're going to need to create a new mobile version
+let NavContainer = styled.p`
   background-color: ${props => props.theme.white};
   display: flex;
   flex-direction: row;
@@ -17,7 +17,7 @@ let NavContainer = styled.div `
   font-weight: 600;
   padding-top:20px;
   justify-content: center;
-  font-family: 'IBM Plex Sans',sans-serif;
+  color: ${props => props.theme.blue};
   align:center;
   font-style:normal;
 
@@ -49,22 +49,6 @@ class IllustrationsContainer extends Component {
 		this.setState({"illustrationsLightboxActive": true, "lightboxIndex": i})
     };
 
-// let IntroText = styled.div`
-//     width: 100%;
-//     margin-left: 10vw;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     position: relative;
-//     padding-top: 1rem;
-//     padding-bottom: 3rem;
-// `;
-
-// let TextContain = styled.h3`
-//      width: 60vw;
-//      margin: 5vh 20vw;
-//      color: white;
-// `;
 
     render() {
         return(
@@ -75,9 +59,6 @@ class IllustrationsContainer extends Component {
 
                         {this.props.data.items.map((data, i) =>
                             <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
-                    {/* <IntroText>
-                            <TextContain>The below gifs were created by illustrations fellow Olivia Vella to accompany the op-eds found on the opinion page.</TextContain>
-                    </IntroText> */}
 
                     <NavContainer fixed={this.props.fixed}>The below gifs were created by illustrations fellow Olivia Vella to accompany the op-eds found on the opinion page.</NavContainer>
                     <ExpandingColumns data = {illustration_sections}/>

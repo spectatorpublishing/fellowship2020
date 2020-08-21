@@ -46,8 +46,8 @@ let MobileLetter = styled.h3`
     margin-top: 0.8rem;
     text-align: center;
     font-size: 1.5em
-    color: ${props => props.theme.white};
-    background-color: ${props => props.theme.taupe};
+    color: ${props => props.theme.blue};
+    background-color: ${props => props.theme.white};
 
 
 `

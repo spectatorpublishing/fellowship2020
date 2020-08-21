@@ -10,7 +10,7 @@ const letter =
 \n\nThis group continually surprised me with their grit, passion, and dedication. For two weeks, they attended back-to-back workshops on subjects ranging from the art of pitching articles and writing profiles to research techniques and competitive analysis. The fellows have continued to develop and build upon these skills and find examples of how these concepts are applied in the real world.\
 \n\nOver the course of the following two weeks, we applied what we had learned in our workshops to program-specific projects. Our fellows interviewed students, professors, and experts for a collection of articles that got the entire University buzzing. They biked across the streets of New York to document the success of the city’s Open Streets program. They wrote articles to make us question our beliefs about sustainability. They examined the long-standing “myths” of the University, the origins of which escape even the most seasoned undergraduate.\
 \n\nWhile I have some trepidation thinking about their arrival in a city and University much altered from the city and University we knew, loved, and left before the COVID-19 pandemic, they do not share that trepidation. They do not wallow in fear or self-pity. Rather, our fellows have worked to build something bigger than themselves—a community that strives to facilitate and shape productive and positive campus discourse. I am so proud of them.\
-\n\nAs Spectator’s head copy editor, I have had the privilege of reading and shaping these articles in their final stages. It is with great pleasure that I now present them to you. Enjoy our Spectator 2020 Summer Fellowship edition.\
+\n\nAs Spectator’s head copy editor, I have had the privilege of reading and shaping these articles in their final stages. It is with great pleasure that I now present them to you. Enjoy our 2020 Spectator Summer Fellowship edition.\
 "
 
 
@@ -21,14 +21,14 @@ let LetterContain = styled.div`
   position: relative;
   padding-top: 15px;
   padding-bottom: 30px;
-  background-color: ${props => props.theme.black};
+  background-color: ${props => props.theme.taupe};
 `
 
 let MobileContain = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: ${props => props.theme.black};
+  background-color: ${props => props.theme.taupe};
 
 `
 

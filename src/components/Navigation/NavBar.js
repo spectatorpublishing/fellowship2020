@@ -50,7 +50,7 @@ let MenuBtn = styled.input`
 
 let MenuColumn = styled.div`
   align-items: center;
-  background-color: ${props => props.transparent ? (props.theme.indigo) : props.theme.black};
+  background-color: ${props => props.transparent ? (props.theme.white) : props.theme.black};
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -144,7 +144,7 @@ let MenuIcon = styled.label`
 `
 
 let NavIcon = styled.span`
-  background: ${props => props.theme.white};
+  background: #9dd5ed;
   display: block;
   height: 2px;
   position: relative;
@@ -153,7 +153,7 @@ let NavIcon = styled.span`
 
   :before,
   :after {
-    background: ${props => props.theme.white};
+    background: #9dd5ed;
     content: '';
     display: block;
     height: 100%;
@@ -196,7 +196,7 @@ let DesktopItem = styled.h5`
 
 let MobileItem = styled.h4`
   color: inherit;
-  text-shadow: ${props => props.theme.shadow};
+  // text-shadow: ${props => props.theme.shadow};
 `
 
 let CrownWrapper = styled.a`

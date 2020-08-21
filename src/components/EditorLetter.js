@@ -27,12 +27,12 @@ let TempLetter = styled.h2`
   height: 15%;
   width: 80%;
   max-width: 999px;
-  color: ${props => props.theme.white};
+  color: #3CABDB;
   display: flex;
   align-text: justify;
   line-height: 90%;
   margin-bottom: 3rem;
-  background-color: ${props => props.theme.indigo};
+  background-color: ${props => props.theme.white};
   align-items: left;
   margin-right: 10vw;
   font-size: 4.5em;
@@ -47,7 +47,7 @@ let MobileLetter = styled.h3`
     text-align: center;
     font-size: 1.5em
     color: ${props => props.theme.white};
-    background-color: ${props => props.theme.indigo};
+    background-color: ${props => props.theme.taupe};
 
     
 `
@@ -57,7 +57,7 @@ const TitleBlurb = styled.p`
   width: 80%;
   // margin-left: 5vw;
   // margin-right: 5vw;
-  color: white;
+  color: #3CABDB;
   // margin-top: 5vh;
   text-align: left;
   z-index: 2;
@@ -66,18 +66,18 @@ const TitleBlurb = styled.p`
 `;
 
 const MobileBlurb = styled.p`
-  color: white;
+  color: #3CABDB;
   white-space: pre-line;
   padding: 15px;
 
 `
 const Role = styled.div`
- color: ${props => props.theme.transparentWhite};
+ color: ${props => props.theme.transparentBlue};
  padding-left: 0.5rem;
 
 `;
 const Line = styled.h5`
-   color: ${props => props.theme.white};
+   color: ${props => props.theme.blue};
   display: flex;
   flex-direction: row;
   margin: 0.5rem 0;
@@ -102,8 +102,8 @@ const Border = styled.div`
 `
 const SectionDivider = styled.hr`
   height: 1px;
-  color: ${props => props.theme.white};
-  background-color: ${props => props.theme.white};
+  color: ${props => props.theme.blue};
+  background-color: ${props => props.theme.blue};
   border: none;
 `
 

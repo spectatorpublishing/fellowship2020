@@ -77,7 +77,7 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 300;
     font-style: italic;
     scroll-behavior: smooth;
-    background: #222430;
+    background: #FFFFFF;
   }
   body,
   button {
@@ -156,10 +156,12 @@ export const GlobalStyles = createGlobalStyle`
 
 export const Theme = {
   black: "#000000",
+  taupe: "#78615d",
   white: "#FFFFFF",
   blue: "#3CABDB",
   indigo: "#222430",
   shadow: "rgba(0, 0, 0, 0.3) 0 0 10px",
   transparentBlack: "rgba(0, 0, 0, 0.32)",
   transparentWhite: "rgba(255, 255, 255, 0.5)",
+  transparentBlue: "rgba(60, 171, 219, 0.5)",
 };

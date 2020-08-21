@@ -21,7 +21,7 @@ let TempHeader = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.img_src});
   background-position: center;
   background-size: cover;
-  background-color: ${props => props.theme.indigo};
+  background-color: ${props => props.theme.taupe};
   justify-content: center;
   align-items: center;
 `
@@ -66,7 +66,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
 &::after {
   content: "";
-  background: ${props => props.theme.indigo};
+  background: ${props => props.theme.taupe};
   opacity: 0.3;
   height: 100vh;
   width: 100vw;

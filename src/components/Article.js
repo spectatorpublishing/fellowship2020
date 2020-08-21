@@ -17,7 +17,7 @@ const Title = styled.h5`
   bottom: 10%;
   margin: 3%;
   width: 30vw;
-  color:white;
+  color: #3CABDB;
 `
 
 const article = (props) =>{

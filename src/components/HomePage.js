@@ -22,6 +22,7 @@ let LeftDiv = styled.div`
   align-items: flex-center;
   height: 100vh;
   line-height: 10vw;
+  z-index: -1;
 `;
 let TitleDiv = styled.div`
   text-align: center;
@@ -48,7 +49,7 @@ let Year = styled.h3`
 `;
 
 let Image = styled.img`
-  z-index: -1;
+  z-index: -2;
   // height: 100%;
   width: 100%;
   // overflow: hidden;
@@ -71,7 +72,7 @@ export default class HomePage extends Component {
           <MobileContainer>
           <TopBox></TopBox>
             <HomePageContainer>
-              <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VFETCOFZE5FJFJTL6XAD64BWAU.png"/>
+              <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/B5SSCLHRVZHLFGOBDI5LDZJYFE.png"/>
               <LeftDiv>
                 <YearDiv>
                   <Year>2020</Year>
@@ -86,7 +87,7 @@ export default class HomePage extends Component {
 
         <Desktop>
           <HomePageContainer>
-            <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VFETCOFZE5FJFJTL6XAD64BWAU.png"/>
+            <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/B5SSCLHRVZHLFGOBDI5LDZJYFE.png"/>
             <LeftDiv>
               <YearDiv>
                 <Year>2020</Year>

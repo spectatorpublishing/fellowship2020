@@ -12,9 +12,9 @@ const Logo = styled.img`
 
 const Center = styled.div`
   text-align: center;  
-  background-color: ${props => props.theme.indigo};
+  background-color: ${props => props.theme.white};
   padding: 5%;
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.blue}};
 
 `;
 
@@ -22,7 +22,7 @@ const footer = (props) =>{
   return (
     <div className="Footer">
 <Center>
-<p>PRODUCED BY</p>
+<h4>Produced By</h4>
 <a href="https://www.columbiaspectator.com/">
 <Logo src={CDS} />
 </a>

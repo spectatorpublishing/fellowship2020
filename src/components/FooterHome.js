@@ -4,8 +4,8 @@ import { Mobile, Tablet, Desktop } from 'react-responsive-simple';
 
 const Background = styled.div`
   width: 100%;
-  background-color: #222430;
-  color: ${props => props.theme.white};
+  background-color: ${props => props.theme.white};
+  color: ${props => props.theme.blue};
   padding-top: 5vh;
 `;
 
@@ -44,7 +44,7 @@ const RoleHeading = styled.h4`
  }
 `
 const Role = styled.div`
- color: ${props => props.theme.transparentWhite};
+ color: ${props => props.theme.transparentBlue};
  margin-left: 0.5rem;
  @media only screen and (max-width: 767px){
     margin-left: 0;

@@ -49,11 +49,11 @@ let MobileLetter = styled.h3`
     color: ${props => props.theme.white};
     background-color: ${props => props.theme.taupe};
 
-    
+
 `
 
 const TitleBlurb = styled.p`
-  font-weight: 25;
+  font-weight: 600
   width: 80%;
   // margin-left: 5vw;
   // margin-right: 5vw;
@@ -117,7 +117,7 @@ class EditorLetter extends Component {
             <TempLetter> LETTER FROM THE EDITOR </TempLetter>
             <TitleBlurb>{this.props.letter}</TitleBlurb>
             <Border><SectionDivider/></Border>
-            <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 
+            <Line>{this.props.author}, <Role>{this.props.role}</Role></Line>
           </LetterContain>
         </Desktop>
 
@@ -125,8 +125,8 @@ class EditorLetter extends Component {
         </MobileContain>
           <MobileLetter>LETTER FROM THE EDITOR</MobileLetter>
           <MobileBlurb>{this.props.letter}</MobileBlurb>
-          
-          <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 
+
+          <Line>{this.props.author}, <Role>{this.props.role}</Role></Line>
         </MobileAndTablet>
       </React.Fragment>
     );

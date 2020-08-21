@@ -3,7 +3,7 @@
 export const illustration_sections = [
 	{
 		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7TBTSCVK4RBVXOA3NQVF265R7I.gif",
-		name: "Olivia Vella",
+	//	name: "Olivia Vella",
 		link: "#opeds"
 	},
 	// {
@@ -13,12 +13,12 @@ export const illustration_sections = [
 	// },
 	{
 		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RM6BP5KZBZDQJC27R7CHEACW6Q.gif",
-		name: "Olivia Vella",
+	//	name: "Olivia Vella",
 		link: "#discourse-and-debate"
 	},
 	{
 		img_src: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/DWPJX7IUD5B55MVZSPC5U6LJZE.gif",
-		name: "Olivia Vella",
+	//	name: "Olivia Vella",
 		link: "#columns"
 	},
 ]

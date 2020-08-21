@@ -8,10 +8,11 @@ const Logo = styled.img`
   margin-right: auto;
   height: 25px;
   margin-top: 10px;
+  filter: invert(25%) sepia(40%) saturate(1100%) hue-rotate(167deg) brightness(85%) contrast(97%);
   `;
 
 const Center = styled.div`
-  text-align: center;  
+  text-align: center;
   background-color: ${props => props.theme.white};
   padding: 5%;
   color: ${props => props.theme.blue}};
@@ -32,4 +33,3 @@ const footer = (props) =>{
 }
 
 export default footer;
-

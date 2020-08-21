@@ -6,7 +6,7 @@ import { NavHashLink } from 'react-router-hash-link';
 
 
 const Contain = styled.div`
-    display: flex;  
+    display: flex;
   	flex-flow: row wrap;
   	width: 100vw;
   	height: calc(100vh - 48px);
@@ -64,7 +64,7 @@ class ExpandingColumns extends Component {
 			hover: i
 		})
 	}
- 
+
 	onStopHover() {
 		this.setState({
 			hover: -1
@@ -78,7 +78,7 @@ class ExpandingColumns extends Component {
 	render(){
 		const grid = this.props.data.map((data, i) => {
 			return (
-				<Column img_src={data.img_src} key={i} index={i} 
+				<Column img_src={data.img_src} key={i} index={i}
 					hover={this.state.hover}
 					onMouseEnter={() => this.onHover(i)}
 					onMouseLeave={this.onStopHover}
@@ -91,16 +91,15 @@ class ExpandingColumns extends Component {
 						<TitleDesktop>{data.name}</TitleDesktop>
 					</Desktop>
 	    		</Column>
-	    		
+
     		)
 		});
 
 		return (
 		    <Contain>{grid}</Contain>
 		);
-	} 
-    
- 
+	}
+
+
 }
 export default withRouter(ExpandingColumns);
-

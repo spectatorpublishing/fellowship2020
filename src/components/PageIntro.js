@@ -7,10 +7,11 @@ let TempTitle = styled.h1`
   text-shadow: ${props => props.theme.shadow};
   z-index: 2;
   position: relative;
-  font-size: ${props => props.isIllo ? "9em" : "12em"};
+  font-size: ${props => props.isIllo ? "7rem" : "auto"};
   @media (max-width: 991px){
         font-size: 6rem;
   }
+
 `
 
 let TempHeader = styled.div`
@@ -38,7 +39,7 @@ const TitleBlurb = styled.p`
   margin-left: 15rem;
   margin-right: 15rem;
 
-  
+
 `;
 
 let MobileTitle = styled.h1`
@@ -46,7 +47,7 @@ color: ${props => props.theme.white};
 text-shadow: ${props => props.theme.shadow};
 z-index: 2;
 position: relative;
-font-size: ${props => props.isIllo ? "3.5rem" : "5rem"};
+font-size: ${props => props.isIllo ? "2.5rem" : "3.5rem"};
 padding: 15px;
 margin-top: 0.7em;`
 
@@ -59,15 +60,15 @@ justify-content: center;
 align-items: center;
 
 background-image: url(${props => props.img_src});
-background-position: center;
+background-position: top;
 background-size: cover;
 -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
 &::after {
   content: "";
-  background: ${props => props.theme.taupe};
-  opacity: 0.3;
+  background: ${props => props.theme.black};
+  opacity: 0.32;
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -97,8 +98,8 @@ class PageIntro extends Component {
         <TempHeader {...this.props}>
           <TempTitle isIllo={this.props.isIllo}>
             <span>
-              {isEye && <EyeLogo 
-                src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/J4UANNLBCVB67HGQOFHU5R6FRU.png" 
+              {isEye && <EyeLogo
+                src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/J4UANNLBCVB67HGQOFHU5R6FRU.png"
                 alt="The Eye logo"
               />}
               {this.props.title}
@@ -113,8 +114,8 @@ class PageIntro extends Component {
           <MobileHeader {...this.props}>
             <MobileTitle isIllo={this.props.isIllo}>
               <MobileSpan>
-                {isEye && <MobileEyeLogo 
-                  src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/J4UANNLBCVB67HGQOFHU5R6FRU.png" 
+                {isEye && <MobileEyeLogo
+                  src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/J4UANNLBCVB67HGQOFHU5R6FRU.png"
                   alt="The Eye logo"
                 />}
                 {this.props.title}

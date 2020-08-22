@@ -7,6 +7,7 @@ const Logo = styled.img`
   margin-left: auto;
   margin-right: auto;
   height: 25px;
+  width: auto;
   margin-top: 10px;
   filter: invert(25%) sepia(40%) saturate(1100%) hue-rotate(167deg) brightness(85%) contrast(97%);
   `;
@@ -23,7 +24,6 @@ const footer = (props) =>{
   return (
     <div className="Footer">
 <Center>
-<h4>Produced By</h4>
 <a href="https://www.columbiaspectator.com/">
 <Logo src={CDS} />
 </a>

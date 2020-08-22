@@ -49,7 +49,7 @@ let MobileLetter = styled.h3`
     color: ${props => props.theme.blue};
     background-color: ${props => props.theme.white};
 
-    
+
 `
 
 const TitleBlurb = styled.p`
@@ -74,6 +74,17 @@ const MobileBlurb = styled.p`
 const Role = styled.div`
  color: ${props => props.theme.transparentBlue};
  padding-left: 0.5rem;
+ font-family: 'Suez One', sans-serif;
+ font-style: normal;
+
+ @media only screen and (max-width: 991px){
+   padding-bottom: 20px;
+   margin-top: -25px; 
+   padding-left: 0rem;
+
+}
+
+
 
 `;
 const Line = styled.h5`
@@ -86,6 +97,7 @@ const Line = styled.h5`
     padding: 15px 15px;
     font-size: 1em;
     margin: 0;
+
  }
 `;
 const Border = styled.div`
@@ -126,8 +138,9 @@ class MultipleEditorsLetter extends Component {
         </MobileContain>
           <MobileLetter>LETTER FROM THE EDITORS</MobileLetter>
           <MobileBlurb>{this.props.letter}</MobileBlurb>
-          
-          <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 
+          <Line>{this.props.author},</Line> <Line><Role>{this.props.role}</Role></Line>
+          {this.props.author2 ? <Line>{this.props.author2}, <Role>{this.props.role2}</Role></Line> : <></> }
+
         </MobileAndTablet>
       </React.Fragment>
     );

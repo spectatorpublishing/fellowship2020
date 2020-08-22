@@ -20,7 +20,7 @@ const TopContainer = styled.div`
   background-size: cover;
 
   @media (max-width: 991px){
-    height: 40vh;
+    height: 50vh;
   }
 `
 
@@ -44,14 +44,6 @@ const MobileTitle = styled.h3`
   margin-right:auto;
 `
 
-const Subtitle = styled.p`
-  font-size: 1.2rem;
-  text-shadow: ${props => props.theme.shadow};
-  padding: 0vh 0vw 12vh 8vw;
-  color: white;
-  width: 60vw;
-`
-
 const MobileAuthor = styled.p`
   font-size: 1.5rem;
   text-shadow: ${props => props.theme.shadow};
@@ -62,6 +54,16 @@ const MobileAuthor = styled.p`
   margin-left:auto;
   margin-right:auto;
 `
+
+const Subtitle = styled.p`
+  font-size: 1.2rem;
+  text-shadow: ${props => props.theme.shadow};
+  padding: 0vh 0vw 12vh 8vw;
+  color: white;
+  width: 60vw;
+`
+
+
 const Author = styled.p`
   font-size: 1.2rem;
   text-shadow: ${props => props.theme.shadow};

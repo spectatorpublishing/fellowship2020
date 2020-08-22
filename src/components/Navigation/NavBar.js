@@ -50,7 +50,7 @@ let MenuBtn = styled.input`
 
 let MenuColumn = styled.div`
   align-items: center;
-  background-color: ${props => props.transparent ? (props.theme.white) : props.theme.black};
+  background-color: ${props => props.transparent ? (props.theme.white) : props.theme.white};
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -263,7 +263,7 @@ class NavBar extends Component {
   getActiveSection(section) {
     return this.props.location.hash.slice(1) === section;
   }
-  
+
   updateTitle(match, name) {
     if (match) {
       document.title = name + " | Spectator Summer Fellowship";
@@ -302,7 +302,7 @@ class NavBar extends Component {
   }
 
   render() {
-    const isMobile = this.state.width < 992;
+    const isMobile = this.state.width < 1100;
     const desktopMenu = (
       <React.Fragment>
         <MenuContainer>
@@ -316,8 +316,8 @@ class NavBar extends Component {
     const mobileMenu = (
       <React.Fragment>
         {this.props.fixed && <MobileText>{this.props.location.hash.slice(1).replace(/-+/g, " ").toUpperCase()}</MobileText>}
-        <MenuBtn 
-          type="checkbox" 
+        <MenuBtn
+          type="checkbox"
           id={this.props.isScrolling ? "scrolling-menu-btn" : "menu-btn"}
           data-checked={this.state.checkedForMobile}
           checked={this.state.checkedForMobile}
@@ -337,8 +337,8 @@ class NavBar extends Component {
       <React.Fragment>
         {!this.props.hideCrown && (
         <LogoContainer>
-          <CrownWrapper 
-            href="/" 
+          <CrownWrapper
+            href="/"
             scrolling={""+(this.props.isScrolling || !this.props.hideCrown)}
           >
             <Crown />

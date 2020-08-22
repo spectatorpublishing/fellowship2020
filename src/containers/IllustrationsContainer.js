@@ -21,6 +21,17 @@ let NavContainer = styled.p`
   align:center;
   font-style:normal;
 
+
+   @media only screen and (max-width: 991px){
+     padding-bottom: 25px;
+     height: 60px;
+     width: 100vw;
+     padding-top:15px
+     font-size: 1.05rem;
+     text-align: -webkit-center;
+
+  }
+
   ${({ fixed }) => fixed && `
     left: 0;
     position: fixed;

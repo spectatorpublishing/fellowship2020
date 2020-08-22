@@ -104,7 +104,7 @@ export const GlobalStyles = createGlobalStyle`
     font-style: italic;
     font-size: 5rem;
     letter-spacing: .2rem;
-    margin: 0;
+  //  margin: 0;
     @media only screen and (max-width: 767px) {
       font-size: 3rem;
     }

@@ -136,7 +136,7 @@ export default class GenericTestimonial extends Component {
                             <MobileAuthorPicture index={i} img_src={data.img} />
                             <MobileTestimonial>
                                 <MobileQuote index={i + 1}>"{data.quote}"</MobileQuote>
-                                <MobileAuthor index={i + 1}>{data.author}</MobileAuthor>
+                                <MobileAuthor index={i + 1}>- {data.author}</MobileAuthor>
                             </MobileTestimonial>
                         </MobileTopContainer>
                     )}
@@ -154,14 +154,14 @@ export default class GenericTestimonial extends Component {
                                     <AuthorPicture index={i} img_src={data.img} />
                                     <Testimonial>
                                         <Quote index={i + 1}>"{data.quote}"</Quote>
-                                        <Author index={i + 1}>{data.author}</Author>
+                                        <Author index={i + 1}>- {data.author}</Author>
                                     </Testimonial>
                                 </TopContainer>
                                 :
                                 <TopContainer>
                                     <Testimonial>
                                         <Quote index={i + 1}>"{data.quote}"</Quote>
-                                        <Author index={i + 1}>{data.author}</Author>
+                                        <Author index={i + 1}>- {data.author}</Author>
                                     </Testimonial>
                                     <AuthorPicture index={i} img_src={data.img} />
                                 </TopContainer>

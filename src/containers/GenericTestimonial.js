@@ -29,19 +29,21 @@ const Testimonial = styled.div`
 `
 
 const AuthorPicture = styled.div`
-  width: 300px;
-  height: 300px;
-  position:relative;
+  width: 400px;
+  height: 400px;
+  margin-top:3.5%;
+  margin-left: ${({ index }) => index % 2 ? '-0.25%' : '2%'};
   background-image: url(${({ img_src }) => img_src});
   background-position: center;
   background-size: cover;
+  align-items: center;
   @media (max-width: 991px){
     height: 50vh;
   }
 `
 
 const Quote = styled.h3`
-  padding: ${({ index }) => index % 2 ? '12vh 2vw 4vh 35vw' : '12vh 2vw 4vh 8vw'};
+  padding: ${({ index }) => index % 2 ? '12vh 2vw 4vh 8vw' : '12vh 8vw 4vh 2vw'};
   text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
   text-shadow: ${props => props.theme.shadow};
   color: white;
@@ -85,7 +87,7 @@ const Subtitle = styled.p`
 const Author = styled.p`
   font-size: 1.2rem;
   text-shadow: ${props => props.theme.shadow};
-  padding: ${({ index }) => index % 2 ? '4vh 2vw 8vh 35vw' : '4vh 2vw 8vh  8vw'};
+  padding: ${({ index }) => index % 2 ? '4vh 2vw 8vh 8vw' : '4vh 8vw 8vh 2vw'};
   text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
   color: white;
   width: 60vw;
@@ -131,7 +133,7 @@ export default class GenericTestimonial extends Component {
                         {this.props.data.articles.map((data, i) =>
                             (i % 2 == 0) ?
                                 <TopContainer>
-                                    <AuthorPicture img_src={data.img} />
+                                    <AuthorPicture index={i} img_src={data.img} />
                                     <Testimonial>
                                         <Quote index={i + 1}>{data.quote}</Quote>
                                         <Author index={i + 1}>{data.author}</Author>
@@ -139,11 +141,12 @@ export default class GenericTestimonial extends Component {
                                 </TopContainer>
 
                                 :
-                                <TopContainer><AuthorPicture img_src={data.img} />
+                                <TopContainer>
                                     <Testimonial>
                                         <Quote index={i + 1}>{data.quote}</Quote>
                                         <Author index={i + 1}>{data.author}</Author>
                                     </Testimonial>
+                                    <AuthorPicture index={i} img_src={data.img} />
                                 </TopContainer>
                         )}
                     </Container>

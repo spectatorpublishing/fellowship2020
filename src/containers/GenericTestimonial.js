@@ -90,20 +90,13 @@ const MobileAuthorPicture = styled.div`
   }
 `;
 
-const Subtitle = styled.p`
-  font-size: 1.2rem;
-  text-shadow: ${props => props.theme.shadow};
-  padding: 0vh 0vw 12vh 8vw;
-  color: white;
-  width: 60vw;
-`
 
 
 const Author = styled.p`
   font-size: 1.2rem;
   text-shadow: ${props => props.theme.shadow};
   padding: ${({ index }) => index % 2 ? '4vh 2vw 0vh 8vw' : '4vh 8vw 0vh 2vw'};
-  text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
+  text-align: right;
   color: white;
   width: 60vw;
 `

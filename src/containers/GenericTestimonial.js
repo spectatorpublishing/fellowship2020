@@ -49,7 +49,7 @@ const Quote = styled.h3`
   color: white;
   width: 60vw;
   font-size:1.6em;
-  line-height: 100%;
+  line-height: 120%;
 `
 
 const MobileTestimonial = styled.p`

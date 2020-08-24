@@ -14,24 +14,42 @@ const Container = styled.div`
 const TopContainer = styled.div`
   width: 100vw;
   height: 100%;
-  float: top;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${({ img_src }) => img_src});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
-
+  display: flex;
+  flex-direction: row;
   @media (max-width: 991px){
     height: 50vh;
   }
 `
 
-const Head = styled.h3`
-	padding: ${({ index }) => index % 2 ? '12vh 2vw 4vh 35vw' : '12vh 2vw 4vh 8vw'};
+const Testimonial = styled.div`
+
+`
+
+const AuthorPicture = styled.div`
+  width: 300px;
+  height: 300px;
+  position:relative;
+  background-image: url(${({ img_src }) => img_src});
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 991px){
+    height: 50vh;
+  }
+`
+
+const Quote = styled.h3`
+  padding: ${({ index }) => index % 2 ? '12vh 2vw 4vh 35vw' : '12vh 2vw 4vh 8vw'};
   text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
   text-shadow: ${props => props.theme.shadow};
   color: white;
   width: 60vw;
+  font-size:30px;
   line-height: 100%;
 `
+
 const MobileTitle = styled.h3`
   padding: 4vh 0vw 2vh 0vw;
   text-shadow: ${props => props.theme.shadow};
@@ -111,14 +129,26 @@ export default class GenericTestimonial extends Component {
               <Subtitle>{this.props.data.blurb}</Subtitle>
             </TopContainer> */}
                         {this.props.data.articles.map((data, i) =>
-                            <TopContainer img_src={data.img}>
-                                <Head index={i + 1}><a target="_blank" style={{ textDecoration: 'none', color: 'white' }} href={data.link}>{data.title}</a></Head>
-                                <Author index={i + 1}>{data.author}</Author>
-                            </TopContainer>
+                            (i % 2 == 0) ?
+                                <TopContainer>
+                                    <AuthorPicture img_src={data.img} />
+                                    <Testimonial>
+                                        <Quote index={i + 1}>{data.quote}</Quote>
+                                        <Author index={i + 1}>{data.author}</Author>
+                                    </Testimonial>
+                                </TopContainer>
+
+                                :
+                                <TopContainer><AuthorPicture img_src={data.img} />
+                                    <Testimonial>
+                                        <Quote index={i + 1}>{data.quote}</Quote>
+                                        <Author index={i + 1}>{data.author}</Author>
+                                    </Testimonial>
+                                </TopContainer>
                         )}
                     </Container>
                 </Desktop>
-            </React.Fragment>
+            </React.Fragment >
         );
     }
 }

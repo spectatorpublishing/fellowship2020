@@ -21,9 +21,6 @@ const TopContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @media (max-width: 991px){
-    height: 50vh;
-  }
 `
 
 const Testimonial = styled.div`
@@ -55,20 +52,26 @@ const Quote = styled.h3`
   line-height: 100%;
 `
 
-const MobileTitle = styled.h3`
-  padding: 4vh 0vw 2vh 0vw;
-  text-shadow: ${props => props.theme.shadow};
-  color: white;
-  width: 80vw;
-  text-align:center;
-  font-size: 2rem;
-  line-height: 100%;
-  margin-left:auto;
-  margin-right:auto;
+const MobileTestimonial = styled.p`
+
+`
+
+const MobileTopContainer = styled.div`
+  width: 100vw;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+`
+
+const MobileQuote = styled.p`
+    font-size: 1.2rem;
+    padding:15px;
 `
 
 const MobileAuthor = styled.p`
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-shadow: ${props => props.theme.shadow};
   padding: 2vh 0vw 4vh 0vw;
   color: white;
@@ -77,6 +80,15 @@ const MobileAuthor = styled.p`
   margin-left:auto;
   margin-right:auto;
 `
+
+const MobileAuthorPicture = styled.div`
+  background-image: url(${({ img_src }) => img_src});
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 991px){
+    height: 50vh;
+  }
+`;
 
 const Subtitle = styled.p`
   font-size: 1.2rem;
@@ -120,10 +132,13 @@ export default class GenericTestimonial extends Component {
                 <MobileAndTablet>
                     {/* <TopContainer img_src={this.props.data.img} isMobile={this.state.isMobile} /> */}
                     {this.props.data.articles.map((data, i) =>
-                        <TopContainer img_src={data.img}>
-                            <MobileTitle><a target="_blank" style={{ textDecoration: 'none', color: 'white' }} href={data.link}>{data.title}</a></MobileTitle>
-                            <MobileAuthor>{data.author}</MobileAuthor>
-                        </TopContainer>
+                        <MobileTopContainer>
+                            <MobileAuthorPicture index={i} img_src={data.img} />
+                            <MobileTestimonial>
+                                <MobileQuote index={i + 1}>"{data.quote}"</MobileQuote>
+                                <MobileAuthor index={i + 1}>{data.author}</MobileAuthor>
+                            </MobileTestimonial>
+                        </MobileTopContainer>
                     )}
                 </MobileAndTablet>
 
@@ -138,15 +153,14 @@ export default class GenericTestimonial extends Component {
                                 <TopContainer>
                                     <AuthorPicture index={i} img_src={data.img} />
                                     <Testimonial>
-                                        <Quote index={i + 1}>{data.quote}</Quote>
+                                        <Quote index={i + 1}>"{data.quote}"</Quote>
                                         <Author index={i + 1}>{data.author}</Author>
                                     </Testimonial>
                                 </TopContainer>
-
                                 :
                                 <TopContainer>
                                     <Testimonial>
-                                        <Quote index={i + 1}>{data.quote}</Quote>
+                                        <Quote index={i + 1}>"{data.quote}"</Quote>
                                         <Author index={i + 1}>{data.author}</Author>
                                     </Testimonial>
                                     <AuthorPicture index={i} img_src={data.img} />

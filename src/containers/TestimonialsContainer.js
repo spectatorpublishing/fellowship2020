@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
-import GenericPanelLayout from './GenericPanelLayout';
+import GenericTestimonial from './GenericTestimonial';
 import PageIntro from '../components/PageIntro'
 import EditorLetter from '../components/EditorLetter';
 import Lightbox from '../components/Lightbox/Lightbox';
@@ -13,42 +13,42 @@ const letter = "Reporting for college newspapers places journalists in a positio
 \n\nThe news fellows have spoken to leading experts, biked across New York City, and used their analytical skills to point them to issues that would otherwise not be addressed. We have seen these reporters seek collaborations with our graphics and illustrations teams—a testament to the fact that a news journalist cannot exist in a vacuum of the newsroom. Our fellows have shown that they know how to produce content that reaches and engages our audience.\
 \n\nWe are incredibly grateful for the opportunity to use Spectator’s outreach to showcase their work. Everything they have done has clearly manifested out of care for communities inside and outside Columbia.";
 
-class SportsEyeContainer extends Component {
+class TestimonialsContainer extends Component {
   constructor() {
-      super()
-      this.state = {
-        // graphicsLightboxActive: false,
-        illustrationsLightboxActive: false,
-        lightboxIndex: 0
-      }
-      this.closeIllustrationsLightbox = this.closeIllustrationsLightbox.bind(this)
-      this.openIllustrationsLightbox = this.openIllustrationsLightbox.bind(this)
+    super()
+    this.state = {
+      // graphicsLightboxActive: false,
+      illustrationsLightboxActive: false,
+      lightboxIndex: 0
+    }
+    this.closeIllustrationsLightbox = this.closeIllustrationsLightbox.bind(this)
+    this.openIllustrationsLightbox = this.openIllustrationsLightbox.bind(this)
   }
 
-  closeIllustrationsLightbox(){
-		this.setState({"illustrationsLightboxActive": false})
-	}
+  closeIllustrationsLightbox() {
+    this.setState({ "illustrationsLightboxActive": false })
+  }
 
-	openIllustrationsLightbox(i){
-		this.setState({"illustrationsLightboxActive": true, "lightboxIndex": i})
-	}
+  openIllustrationsLightbox(i) {
+    this.setState({ "illustrationsLightboxActive": true, "lightboxIndex": i })
+  }
 
   render() {
     //
-        
+
     return (
       <React.Fragment>
         <div>
-          <PageIntro title="TESTIMONIALS" description={this.props.data.blurb} img_src={this.props.data.img}/>
-        
-            {this.props.data.items.map((data, i) => 
-              <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
+          <PageIntro title="TESTIMONIALS" description={this.props.data.blurb} img_src={this.props.data.img} />
+
+          {this.props.data.items.map((data, i) =>
+            <GenericTestimonial key={i} data={this.props.data.items[i]} />)}
         </div>
       </React.Fragment>
-      
+
     );
   }
 }
 
-export default SportsEyeContainer;
+export default TestimonialsContainer;
 

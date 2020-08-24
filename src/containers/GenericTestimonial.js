@@ -19,6 +19,8 @@ const TopContainer = styled.div`
   background-size: cover;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 991px){
     height: 50vh;
   }
@@ -32,8 +34,7 @@ const Testimonial = styled.div`
 const AuthorPicture = styled.div`
   width: 400px;
   height: 400px;
-  margin-top:2%;
-  margin-bottom:2%;
+
   margin-left: ${({ index }) => index % 2 ? '-0.25%' : '2%'};
   background-image: url(${({ img_src }) => img_src});
   background-position: center;

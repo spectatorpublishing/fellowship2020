@@ -25,13 +25,15 @@ const TopContainer = styled.div`
 `
 
 const Testimonial = styled.div`
-
+  align-items: center;
+  padding: 120px 0;
 `
 
 const AuthorPicture = styled.div`
   width: 400px;
   height: 400px;
-  margin-top:3.5%;
+  margin-top:2%;
+  margin-bottom:2%;
   margin-left: ${({ index }) => index % 2 ? '-0.25%' : '2%'};
   background-image: url(${({ img_src }) => img_src});
   background-position: center;
@@ -43,12 +45,12 @@ const AuthorPicture = styled.div`
 `
 
 const Quote = styled.h3`
-  padding: ${({ index }) => index % 2 ? '12vh 2vw 4vh 8vw' : '12vh 8vw 4vh 2vw'};
+  padding: ${({ index }) => index % 2 ? '0vh 2vw 0vh 8vw' : '0vh 8vw 0vh 2vw'};
   text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
   text-shadow: ${props => props.theme.shadow};
   color: white;
   width: 60vw;
-  font-size:30px;
+  font-size:1.6em;
   line-height: 100%;
 `
 
@@ -87,7 +89,7 @@ const Subtitle = styled.p`
 const Author = styled.p`
   font-size: 1.2rem;
   text-shadow: ${props => props.theme.shadow};
-  padding: ${({ index }) => index % 2 ? '4vh 2vw 8vh 8vw' : '4vh 8vw 8vh 2vw'};
+  padding: ${({ index }) => index % 2 ? '4vh 2vw 0vh 8vw' : '4vh 8vw 0vh 2vw'};
   text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
   color: white;
   width: 60vw;

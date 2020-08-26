@@ -14,7 +14,7 @@ const Container = styled.div`
 const TopContainer = styled.div`
   width: 100vw;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
   display: flex;
@@ -42,11 +42,11 @@ const AuthorPicture = styled.div`
   }
 `
 
-const Quote = styled.h3`
+const Quote = styled.p`
   padding: ${({ index }) => index % 2 ? '0vh 2vw 0vh 8vw' : '0vh 8vw 0vh 2vw'};
   text-align: ${({ index }) => index % 2 ? 'right' : 'left'};
-  text-shadow: ${props => props.theme.shadow};
-  color: white;
+  // text-shadow: ${props => props.theme.shadow};
+  color: ${props => props.theme.blue};
   width: 60vw;
   font-size:1.6em;
   line-height: 120%;
@@ -59,22 +59,24 @@ const MobileTestimonial = styled.p`
 const MobileTopContainer = styled.div`
   width: 100vw;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
   align-items: center;
 `
 
 const MobileQuote = styled.p`
-    font-size: 1.2rem;
-    padding:15px;
+  font-size: 1.2rem;
+  color: ${props => props.theme.blue};
+  text-align: center;
+  padding:15px;
 `
 
-const MobileAuthor = styled.p`
-  font-size: 1rem;
-  text-shadow: ${props => props.theme.shadow};
+const MobileAuthor = styled.h5`
+  font-size: 1.2rem;
+  // text-shadow: ${props => props.theme.shadow};
   padding: 2vh 0vw 4vh 0vw;
-  color: white;
+  color: ${props => props.theme.blue};
   width: 60vw;
   text-align:center;
   margin-left:auto;
@@ -90,14 +92,44 @@ const MobileAuthorPicture = styled.div`
   }
 `;
 
-
-
-const Author = styled.p`
-  font-size: 1.2rem;
-  text-shadow: ${props => props.theme.shadow};
+const ReadHere = styled.p`
   padding: ${({ index }) => index % 2 ? '4vh 2vw 0vh 8vw' : '4vh 8vw 0vh 2vw'};
   text-align: right;
-  color: white;
+  color: ${props => props.theme.blue};
+  width: 60vw;
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 120%;
+`
+
+const MobileReadHere = styled.p`
+  font-size: 1.2rem;
+  color: ${props => props.theme.blue};
+  text-align: center;
+  font-style: italic;`
+
+const Author = styled.h5`
+  font-size: 1.5rem;
+  // text-shadow: ${props => props.theme.shadow};
+  padding: ${({ index }) => index % 2 ? '4vh 2vw 0vh 8vw' : '4vh 8vw 0vh 2vw'};
+  text-align: right;
+  color: ${props => props.theme.blue};
+  width: 60vw;
+`
+
+const Year = styled.h5`
+  font-size: 1.5rem;
+  text-align: right;
+  padding-left: 0.5rem
+  color: ${props => props.theme.transparentBlue};
+  width: 60vw;
+`
+
+const Home = styled.h5`
+  font-size: 1.5rem;
+  text-align: right;
+  padding-left: 0.5rem
+  color: "rgba(60, 171, 219, 0.25)";
   width: 60vw;
 `
 
@@ -128,8 +160,9 @@ export default class GenericTestimonial extends Component {
                         <MobileTopContainer>
                             <MobileAuthorPicture index={i} img_src={data.img} />
                             <MobileTestimonial>
-                                <MobileQuote index={i + 1}>"{data.quote}"</MobileQuote>
-                                <MobileAuthor index={i + 1}>- {data.author}</MobileAuthor>
+                                <MobileQuote index={i + 1}>“{data.quote}”</MobileQuote>
+                                <MobileAuthor index={i + 1}>{data.author}</MobileAuthor>
+                                <MobileReadHere index={i + 1}>{data.description}</MobileReadHere>
                             </MobileTestimonial>
                         </MobileTopContainer>
                     )}
@@ -146,15 +179,17 @@ export default class GenericTestimonial extends Component {
                                 <TopContainer>
                                     <AuthorPicture index={i} img_src={data.img} />
                                     <Testimonial>
-                                        <Quote index={i + 1}>"{data.quote}"</Quote>
-                                        <Author index={i + 1}>- {data.author}</Author>
+                                        <Quote index={i + 1}>“{data.quote}”</Quote>
+                                        <div><Author index={i + 1}>{data.author},</Author><Year index={i + 1}>{data.year},</Year> <Home index={i + 1}>{data.home}</Home></div>
+                                        <ReadHere index={i + 1}>{data.description}</ReadHere>
                                     </Testimonial>
                                 </TopContainer>
                                 :
                                 <TopContainer>
                                     <Testimonial>
-                                        <Quote index={i + 1}>"{data.quote}"</Quote>
-                                        <Author index={i + 1}>- {data.author}</Author>
+                                        <Quote index={i + 1}>“{data.quote}”</Quote>
+                                        <div><Author index={i + 1}>{data.author},</Author><Year index={i + 1}>{data.year},</Year> <Home index={i + 1}>{data.home}</Home></div>
+                                        <ReadHere index={i + 1}>{data.description}</ReadHere>
                                     </Testimonial>
                                     <AuthorPicture index={i} img_src={data.img} />
                                 </TopContainer>

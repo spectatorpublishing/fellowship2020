@@ -79,8 +79,8 @@ const Role = styled.div`
 
  @media only screen and (max-width: 991px){
    padding-bottom: 20px;
-   margin-top: -25px; 
-   padding-left: 0rem;
+  //  margin-top: -25px; 
+   padding-left: 0.3rem;
 
 }
 
@@ -138,7 +138,7 @@ class MultipleEditorsLetter extends Component {
         </MobileContain>
           <MobileLetter>LETTER FROM THE EDITORS</MobileLetter>
           <MobileBlurb>{this.props.letter}</MobileBlurb>
-          <Line>{this.props.author},</Line> <Line><Role>{this.props.role}</Role></Line>
+          <Line>{this.props.author}, <Role>{this.props.role}</Role></Line>
           {this.props.author2 ? <Line>{this.props.author2}, <Role>{this.props.role2}</Role></Line> : <></> }
 
         </MobileAndTablet>

@@ -7,7 +7,6 @@ import EditorLetter from '../components/EditorLetter';
 import { illustration_sections } from '../util/OpinionData'
 import styled from 'styled-components';
 
-// this doesn't work on mobile so we're going to need to create a new mobile version
 let NavContainer = styled.p`
   background-color: ${props => props.theme.white};
   display: flex;

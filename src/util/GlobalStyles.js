@@ -164,4 +164,5 @@ export const Theme = {
   transparentBlack: "rgba(0, 0, 0, 0.32)",
   transparentWhite: "rgba(255, 255, 255, 0.5)",
   transparentBlue: "rgba(60, 171, 219, 0.5)",
+  moretransparentBlue: "rgba(60, 171, 219, 0.3)"
 };

@@ -69,7 +69,8 @@ const MobileQuote = styled.p`
   font-size: 1.2rem;
   color: ${props => props.theme.blue};
   text-align: center;
-  padding:15px;
+  padding: 15px;
+  padding-top: 1.5rem;
 `
 
 const MobileAuthor = styled.h5`
@@ -77,11 +78,21 @@ const MobileAuthor = styled.h5`
   // text-shadow: ${props => props.theme.shadow};
   padding: 2vh 0vw 4vh 0vw;
   color: ${props => props.theme.blue};
-  width: 60vw;
+  // width: 60vw;
   text-align:center;
   margin-left:auto;
   margin-right:auto;
 `
+
+const MobileYear = styled.div`
+  color: ${props => props.theme.transparentBlue};
+  padding-left: 0.2rem;
+`
+
+const MobileHome = styled.div`
+  color: ${props => props.theme.moretransparentBlue};
+`
+
 
 const MobileAuthorPicture = styled.div`
   background-image: url(${({ img_src }) => img_src});
@@ -106,31 +117,54 @@ const MobileReadHere = styled.p`
   font-size: 1.2rem;
   color: ${props => props.theme.blue};
   text-align: center;
-  font-style: italic;`
+  font-style: italic;
+  padding-bottom: 2rem;
+  `
 
 const Author = styled.h5`
   font-size: 1.5rem;
   // text-shadow: ${props => props.theme.shadow};
   padding: ${({ index }) => index % 2 ? '4vh 2vw 0vh 8vw' : '4vh 8vw 0vh 2vw'};
-  text-align: right;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
   color: ${props => props.theme.blue};
   width: 60vw;
+  margin: 0.5rem 0;
+
+   @media only screen and (max-width: 991px){
+    padding: 15px 15px;
+    font-size: 1em;
+    margin: 0;
 `
 
-const Year = styled.h5`
-  font-size: 1.5rem;
-  text-align: right;
-  padding-left: 0.5rem
+const Year = styled.div`
+  padding-left: 0.5rem;
   color: ${props => props.theme.transparentBlue};
-  width: 60vw;
 `
 
-const Home = styled.h5`
-  font-size: 1.5rem;
-  text-align: right;
-  padding-left: 0.5rem
-  color: "rgba(60, 171, 219, 0.25)";
-  width: 60vw;
+const Home = styled.div`
+  color: ${props => props.theme.moretransparentBlue};
+  padding-left: 0.5rem;
+`
+
+const LinkBox = styled.a`
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  text-decoration: none;
+`
+const MobileLinkBox = styled.a`
+  background-color: white;
+  text-decoration: none;
+`
+
+const SectionDivider = styled.hr`
+  height: 3px;
+  width: 100vw;
+  color: ${props => props.theme.blue};
+  background-color: ${props => props.theme.blue};
+  border: none;
 `
 
 export default class GenericTestimonial extends Component {
@@ -161,8 +195,12 @@ export default class GenericTestimonial extends Component {
                             <MobileAuthorPicture index={i} img_src={data.img} />
                             <MobileTestimonial>
                                 <MobileQuote index={i + 1}>“{data.quote}”</MobileQuote>
-                                <MobileAuthor index={i + 1}>{data.author}</MobileAuthor>
-                                <MobileReadHere index={i + 1}>{data.description}</MobileReadHere>
+                                <MobileAuthor index={i + 1}>{data.author}, <MobileYear index={i + 1}>{data.year},</MobileYear><MobileHome index={i + 1}>{data.home}</MobileHome></MobileAuthor>
+                                {data.link ?
+                                <MobileLinkBox href={data.link}>
+                                  <MobileReadHere index={i + 1}>{data.description}</MobileReadHere>
+                                </MobileLinkBox> 
+                                : <></> }
                             </MobileTestimonial>
                         </MobileTopContainer>
                     )}
@@ -176,23 +214,38 @@ export default class GenericTestimonial extends Component {
             </TopContainer> */}
                         {this.props.data.articles.map((data, i) =>
                             (i % 2 == 0) ?
+                                <>
                                 <TopContainer>
                                     <AuthorPicture index={i} img_src={data.img} />
                                     <Testimonial>
                                         <Quote index={i + 1}>“{data.quote}”</Quote>
-                                        <div><Author index={i + 1}>{data.author},</Author><Year index={i + 1}>{data.year},</Year> <Home index={i + 1}>{data.home}</Home></div>
-                                        <ReadHere index={i + 1}>{data.description}</ReadHere>
+                                        <Author index={i + 1}>{data.author},<Year index={i + 1}>{data.year},</Year><Home index={i + 1}>{data.home}</Home></Author>
+                                        {data.link ?
+                                        <LinkBox href={data.link}>
+                                          <ReadHere index={i + 1}>{data.description}</ReadHere>
+                                        </LinkBox> 
+                                        : <></> }
                                     </Testimonial>
                                 </TopContainer>
+                                <SectionDivider></SectionDivider>
+                                </>
                                 :
+                                <>
                                 <TopContainer>
                                     <Testimonial>
                                         <Quote index={i + 1}>“{data.quote}”</Quote>
-                                        <div><Author index={i + 1}>{data.author},</Author><Year index={i + 1}>{data.year},</Year> <Home index={i + 1}>{data.home}</Home></div>
-                                        <ReadHere index={i + 1}>{data.description}</ReadHere>
+                                        <Author index={i + 1}>{data.author},<Year index={i + 1}>{data.year},</Year><Home index={i + 1}>{data.home}</Home></Author>
+                                        {data.link ?
+                                        <LinkBox href={data.link}>
+                                          <ReadHere index={i + 1}>{data.description}</ReadHere>
+                                        </LinkBox> 
+                                        : <></> }
                                     </Testimonial>
                                     <AuthorPicture index={i} img_src={data.img} />
                                 </TopContainer>
+                                <SectionDivider></SectionDivider>
+                                </>
+
                         )}
                     </Container>
                 </Desktop>

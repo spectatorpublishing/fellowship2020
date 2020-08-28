@@ -108,7 +108,7 @@ const Border = styled.div`
     float: left;
     padding-left: 10vw; 
     @media only screen and (max-width: 991px){
-      padding: 15px 10vw 5px 10vw;
+      padding: 10px 10vw 10px 10vw;
       margin: 0;
    }
 `

@@ -72,35 +72,18 @@ const footerHome = (props) =>{
           <Names>
           <Column>
             <RoleHeading>Fellowship Edition By</RoleHeading>
-            <Line>Sarah Braka, <Role>Program Director, Copy Queen</Role></Line> 
+            <Line>Sarah Braka, <Role>Program Director, Head Copy Editor</Role></Line> 
             <Line>Raeedah Wahid, <Role>Graphics Editor</Role></Line> 
           </Column>
 
           <Column>
             <RoleHeading>Development Assistance</RoleHeading>
             <Line>Hong Sen Du, <Role>Head of Newsroom Development</Role></Line> 
-            <Line>Jennifer Wang, <Role>Engineering Fellow</Role></Line> 
             <Line>Michael Li, <Role>Developer</Role></Line> 
-            <Line>Emme Pogue, <Role>Best Friend</Role></Line> 
+            <Line>Emme Pogue, <Role>Developer</Role></Line> 
+            <Line>Jennifer Wang, <Role>Engineering Fellow</Role></Line> 
           </Column>
-          {/* <Column>
-            <RoleHeading>&nbsp;</RoleHeading>
-            <Line>Wendy Wang, <Role>Developer</Role></Line> 
-            <Line>Yunsu Kim, <Role>Developer</Role></Line> 
-            <Line>Daniel Kim, <Role>Developer</Role></Line> 
-            <Line>Arsalaan Ansari, <Role>Former Head of Engineering</Role></Line> 
-          </Column> */}
-          {/* <Column>
-              <RoleHeading>Template By</RoleHeading>
-              <Line>Shannon Hui, <Role></Role></Line> 
-              <Line>David Wang, <Role></Role></Line> 
-              <Line>Kevin Li, <Role></Role></Line>
-              <Line>Yulong Li, <Role></Role></Line> 
-              <Line>Amina Assal, <Role></Role></Line> 
-              <Line>Julie Song, and <Role></Role></Line> 
-              <Line>Stacy Tao <Role></Role></Line> 
-          </Column>         */}
-
+          
         </Names>
         </Desktop>
 
@@ -115,9 +98,9 @@ const footerHome = (props) =>{
           <Column>
             <RoleHeading>Development Assistance</RoleHeading>
             <Line>Hong Sen Du, <Role>Head of Newsroom Development</Role></Line> 
-            <Line>Jennifer Wang, <Role>Engineering Fellow</Role></Line> 
             <Line>Michael Li, <Role>Developer</Role></Line> 
-            <Line>Emme Pogue <Role></Role></Line> 
+            <Line>Emme Pogue, <Role>Developer</Role></Line> 
+            <Line>Jennifer Wang, <Role>Engineering Fellow</Role></Line> 
           </Column>       
         </Names>
         </Tablet>
@@ -145,18 +128,18 @@ const footerHome = (props) =>{
             <Role>Head of Newsroom Development</Role>
             </Column>
             <Column>
-            <Line>Jennifer Wang,</Line> 
-            <Role>Engineering Fellow</Role>
+            <Line>Michael Li,</Line> 
+            <Role>Developer</Role>
             </Column>
           </Row>
           <Row continuation={true} >
             <Column>
-            <Line>Michael Li,</Line> 
+            <Line>Emme Pogue,</Line> 
             <Role>Developer</Role>
             </Column>
             <Column>
-            <Line>Emme Pogue</Line> 
-            <Role></Role>
+            <Line>Jennifer Wang,</Line> 
+            <Role>Engineering Fellow</Role>
             </Column>
           </Row>
         </Names>

@@ -402,9 +402,9 @@ const data = {
         "link": "",
         "quote": "I think it was a perfect balance between independence and mentorship; my project is me, but I owe so much of the thinking that went into this to Eve and Lizzie, who encouraged me and pushed me to dig deep. I felt much less intimidated by my first Spec article knowing that I had that support system.",
         "author": "Megan Lunny",
-        "year": "CC ’24,",
+        "year": "CC ’24",
         "home": "Pennsylvania",
-        "description": "THIS NEEDS A LINK Read Megan’s feature in The Eye here."
+        "description": "Read Megan’s feature in The Eye here."
       },
       {
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3MEFX7SVVZAVND7WSVLWYZUDMU.png",

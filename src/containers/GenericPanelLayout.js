@@ -18,6 +18,9 @@ const TopContainer = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${({ img_src }) => img_src});
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media (max-width: 991px){
     height: 50vh;

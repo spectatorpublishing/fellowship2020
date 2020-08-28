@@ -18,8 +18,6 @@ let LetterContain = styled.div`
 let MobileContain = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 `
 
@@ -33,7 +31,7 @@ let TempLetter = styled.h2`
   line-height: 90%;
   margin-bottom: 3rem;
   background-color: ${props => props.theme.white};
-  align-items: left;
+  align-items: center;
   margin-right: 10vw;
   font-size: 4.5em;
   /* font-size: 8em; -- specified by global styles */
@@ -68,7 +66,7 @@ const TitleBlurb = styled.p`
 const MobileBlurb = styled.p`
   color: #3CABDB;
   white-space: pre-line;
-  padding: 15px;
+  padding: 15px 10vw;
 
 `
 const Role = styled.div`
@@ -77,13 +75,13 @@ const Role = styled.div`
 
 `;
 const Line = styled.h5`
-   color: ${props => props.theme.blue};
+  color: ${props => props.theme.blue};
   display: flex;
   flex-direction: row;
   margin: 0.5rem 0;
 
    @media only screen and (max-width: 991px){
-    padding: 15px 15px;
+    padding: 0px 10vw 15px 10vw;
     font-size: 1em;
     margin: 0;
  }
@@ -95,16 +93,25 @@ const Border = styled.div`
     width: 69.211px;
     border-width: 2pt;
     float: left;
+    padding-left: 10 vw;
     @media only screen and (max-width: 991px){
-      padding: 15px 10vw 5px 10vw;
+      padding: 10px 10vw 10px 10vw;
       margin: 0;
    }
 `
+
 const SectionDivider = styled.hr`
   height: 1px;
   color: ${props => props.theme.blue};
   background-color: ${props => props.theme.blue};
   border: none;
+`
+
+const MobileRole = styled(Role)`
+ padding-left: 0;
+`;
+const MobileLine = styled(Line)`
+ flex-direction: column;
 `
 
 
@@ -121,12 +128,13 @@ class EditorLetter extends Component {
           </LetterContain>
         </Desktop>
 
-        <MobileAndTablet><MobileContain>
-        </MobileContain>
-          <MobileLetter>LETTER FROM THE EDITOR</MobileLetter>
-          <MobileBlurb>{this.props.letter}</MobileBlurb>
-
-          <Line>{this.props.author}, <Role>{this.props.role}</Role></Line>
+        <MobileAndTablet>
+          <MobileContain>
+            <MobileLetter>LETTER FROM THE EDITOR</MobileLetter>
+            <MobileBlurb>{this.props.letter}</MobileBlurb>
+            <Border><SectionDivider/></Border>
+            <MobileLine>{this.props.author}, <MobileRole>{this.props.role}</MobileRole></MobileLine>
+          </MobileContain>
         </MobileAndTablet>
       </React.Fragment>
     );

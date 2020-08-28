@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
-import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro'
 import MultipleEditorsLetter from '../components/MultipleEditorsLetter';
-import Lightbox from '../components/Lightbox/Lightbox';
-import PhotoGrid from '../components/PhotoGrid.js';
 
 const letter = "Throughout the course of this fellowship, we challenged our 12 bright-eyed fellows for The Eye and Sports to answer this question: What does it mean to write a feature?\
 \n\nTo challenge an institution? To tell a story? To profile an event? To share a resource? To rethink how we look at things?\

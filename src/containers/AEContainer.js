@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro';
 import EditorLetter from '../components/EditorLetter';

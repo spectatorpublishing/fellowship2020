@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 
-import ExpandingColumns from '../components/ExpandingColumns';
-import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro'
 import EditorLetter from '../components/EditorLetter'
-import PhotoGrid from '../components/PhotoGrid';
-import { opinion_sections } from '../util/OpinionData'
 
 const letter = "When creating the curriculum for the opinion workshops, I wanted to instill in the fellows a deep regard for the intricacies and history of our campus and surrounding communities. While it is undoubtedly important for students to understand this, it is even more so for editors often entrusted with the responsibility of highlighting vulnerable stories written by those most affected.\
 \n\nAlthough one of the responsibilities of an editor is making difficult decisions about what to publish, empathy is also a necessary skill. While writing op-eds can sometimes be another matter, opinion editing and sourcing should be,, at its core, is altruistic. I strongly believe that journalism nurtures one’s humanity and that humanity is a prerequisite for journalism.\

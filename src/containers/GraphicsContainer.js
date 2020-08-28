@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
 import PageIntro from '../components/PageIntro';
-import PhotoGrid from '../components/PhotoGrid.js';
-import Lightbox from '../components/Lightbox/Lightbox';
 import GenericPanelLayout from './GenericPanelLayout';
-import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import EditorLetter from '../components/EditorLetter';
 
 const letter = "Often, I find that the most brilliant stories—those that emphasize truth and accountability—are rooted in data. As the digital medium has transformed, so too have the stories we choose to tell. By acknowledging the role of data in our understanding of society, we can analyze and question the validity of what we consider to be true.\

@@ -19,7 +19,6 @@ let MobileContain = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 `
 
@@ -33,11 +32,12 @@ let TempLetter = styled.h2`
   line-height: 90%;
   margin-bottom: 3rem;
   background-color: ${props => props.theme.white};
-  align-items: left;
+  align-items: center;
   margin-right: 10vw;
   font-size: 4.5em;
   /* font-size: 8em; -- specified by global styles */
   position: relative;
+  
 `
 
 let MobileLetter = styled.h3`
@@ -68,7 +68,7 @@ const TitleBlurb = styled.p`
 const MobileBlurb = styled.p`
   color: #3CABDB;
   white-space: pre-line;
-  padding: 15px;
+  padding: 15px 10vw;
 
 `
 const Role = styled.div`
@@ -78,28 +78,27 @@ const Role = styled.div`
  font-style: normal;
 
  @media only screen and (max-width: 991px){
-   padding-bottom: 20px;
+  padding-bottom: 20px;
   //  margin-top: -25px; 
-   padding-left: 0.3rem;
+  padding-left: 0rem;
 
 }
-
-
-
 `;
+
 const Line = styled.h5`
-   color: ${props => props.theme.blue};
+  color: ${props => props.theme.blue};
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0.5rem 0;
 
    @media only screen and (max-width: 991px){
-    padding: 15px 15px;
+    padding: 0px 0vw 15px 10vw;
     font-size: 1em;
     margin: 0;
 
  }
 `;
+
 const Border = styled.div`
     margin-top: 30px;
     margin-bottom: 20px;
@@ -107,8 +106,9 @@ const Border = styled.div`
     width: 69.211px;
     border-width: 2pt;
     float: left;
+    padding-left: 10 vw;
     @media only screen and (max-width: 991px){
-      padding: 15px 10vw 5px 10vw;
+      padding: 10px 10vw 10px 10vw;
       margin: 0;
    }
 `
@@ -118,7 +118,6 @@ const SectionDivider = styled.hr`
   background-color: ${props => props.theme.blue};
   border: none;
 `
-
 
 class MultipleEditorsLetter extends Component {
   render() {
@@ -135,12 +134,12 @@ class MultipleEditorsLetter extends Component {
         </Desktop>
 
         <MobileAndTablet><MobileContain>
-        </MobileContain>
-          <MobileLetter>LETTER FROM THE EDITORS</MobileLetter>
-          <MobileBlurb>{this.props.letter}</MobileBlurb>
-          <Line>{this.props.author}, <Role>{this.props.role}</Role></Line>
-          {this.props.author2 ? <Line>{this.props.author2}, <Role>{this.props.role2}</Role></Line> : <></> }
-
+            <MobileLetter>LETTER FROM THE EDITORS</MobileLetter>
+            <MobileBlurb>{this.props.letter}</MobileBlurb>
+            <Border><SectionDivider/></Border>
+            <Line>{this.props.author},<Role>{this.props.role}</Role></Line>
+            {this.props.author2 ? <Line>{this.props.author2},<Role>{this.props.role2}</Role></Line> : <></> }
+          </MobileContain>
         </MobileAndTablet>
       </React.Fragment>
     );

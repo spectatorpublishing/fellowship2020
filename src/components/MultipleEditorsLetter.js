@@ -40,17 +40,27 @@ let TempLetter = styled.h2`
 
 `
 
-let MobileLetter = styled.h3`
+let MobileLetter = styled.h2`
+background-color: ${props => props.theme.white};
+    height: 15%;
+    width: 80%;
+    max-width: 999px;
+    color: #3CABDB;
     display: flex;
-    padding: 15px;
-    margin-top: 0.8rem;
-    text-align: center;
-    font-size: 1.5em
-    color: ${props => props.theme.blue};
+    align-text: justify;
+    line-height: 90%;
+    margin-bottom: 3rem;
     background-color: ${props => props.theme.white};
-
-
-`
+    align-items: center;
+    margin-right: 10vw;
+    font-size: 2.5em;
+    /* font-size: 8em; -- specified by global styles */
+    position: relative;
+    @media only screen and (max-width: 991px){
+     padding: 0px 10vw 15px 10vw;
+     margin: 0;
+  }
+  `
 
 const TitleBlurb = styled.p`
   font-weight: 600;

@@ -94,8 +94,12 @@ const data = {
         "author": "Carla Villafane",
         "link": "https://www.columbiaspectator.com/the-eye/2020/08/15/a-cheesy-realization/",
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TSX3EKS5FJD33JAPFMS4NZKZXY"
-
-
+      },
+      {
+        "title": "Columbia announced a test-optional policy for 2020-2021 applicants. Is it time to scrap the test requirement for good?",
+        "author": "Megan Lunny",
+        "link": "https://www.columbiaspectator.com/the-eye/2020/08/28/columbia-announced-a-test-optional-policy-for-2020-2021-applicants-is-it-time-to-scrap-the-test-requirement-for-good/",
+        "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZI67JVHNWJGEBPZW4D6CB43VGQ.jpg"
       }
       ]
     }
@@ -399,7 +403,7 @@ const data = {
       },
       {
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TL74CU55EFAFNJDNO2GKQEKP7Q.png",
-        "link": "",
+        "link": "https://www.columbiaspectator.com/the-eye/2020/08/28/columbia-announced-a-test-optional-policy-for-2020-2021-applicants-is-it-time-to-scrap-the-test-requirement-for-good/",
         "quote": "I think it was a perfect balance between independence and mentorship; my project is me, but I owe so much of the thinking that went into this to Eve and Lizzie, who encouraged me and pushed me to dig deep. I felt much less intimidated by my first Spec article knowing that I had that support system.",
         "author": "Megan Lunny",
         "year": "CC ’24",

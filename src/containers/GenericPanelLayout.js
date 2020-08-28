@@ -68,7 +68,7 @@ const Subtitle = styled.p`
 
 
 const Author = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-shadow: ${props => props.theme.shadow};
   padding: ${({ index }) => index % 2 ? '4vh 2vw 8vh 35vw' : '4vh 2vw 8vh  8vw'};
   text-align: ${({ index }) => index % 2 ? 'right' : 'left'};

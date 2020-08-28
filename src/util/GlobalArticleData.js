@@ -218,7 +218,7 @@ const data = {
     ]
   },
   "Graphics": {
-    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WCLIWS7NPRGWHJG74RVT72O4LY.png",
+    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TDCTDOGCSBEIRJFGCIBTZUHWJY.png",
     "items": [{
       "name": "Data Visualization",
       "articles": [{

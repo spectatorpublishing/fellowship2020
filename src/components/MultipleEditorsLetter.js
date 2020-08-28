@@ -37,7 +37,7 @@ let TempLetter = styled.h2`
   font-size: 4.5em;
   /* font-size: 8em; -- specified by global styles */
   position: relative;
-  
+
 `
 
 let MobileLetter = styled.h3`
@@ -73,13 +73,12 @@ const MobileBlurb = styled.p`
 `
 const Role = styled.div`
  color: ${props => props.theme.transparentBlue};
- padding-left: 0.5rem;
  font-family: 'Suez One', sans-serif;
  font-style: normal;
 
  @media only screen and (max-width: 991px){
   padding-bottom: 20px;
-  //  margin-top: -25px; 
+  //  margin-top: -25px;
   padding-left: 0rem;
 
 }
@@ -137,7 +136,7 @@ class MultipleEditorsLetter extends Component {
             <MobileLetter>LETTER FROM THE EDITORS</MobileLetter>
             <MobileBlurb>{this.props.letter}</MobileBlurb>
             <Border><SectionDivider/></Border>
-            <Line>{this.props.author},<Role>{this.props.role}</Role></Line>
+            <Line>{this.props.author}, <Role>{this.props.role}</Role></Line>
             {this.props.author2 ? <Line>{this.props.author2},<Role>{this.props.role2}</Role></Line> : <></> }
           </MobileContain>
         </MobileAndTablet>

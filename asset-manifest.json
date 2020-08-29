@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/fellowship2020/static/js/main.e3eb64bc.chunk.js",
-    "main.js.map": "/fellowship2020/static/js/main.e3eb64bc.chunk.js.map",
-    "runtime-main.js": "/fellowship2020/static/js/runtime-main.983b3b1a.js",
-    "runtime-main.js.map": "/fellowship2020/static/js/runtime-main.983b3b1a.js.map",
+    "main.js": "/fellowship2020/static/js/main.f57b92f4.chunk.js",
+    "main.js.map": "/fellowship2020/static/js/main.f57b92f4.chunk.js.map",
+    "runtime-main.js": "/fellowship2020/static/js/runtime-main.2619edf1.js",
+    "runtime-main.js.map": "/fellowship2020/static/js/runtime-main.2619edf1.js.map",
     "static/css/2.9dd49d4e.chunk.css": "/fellowship2020/static/css/2.9dd49d4e.chunk.css",
-    "static/js/2.1d08e451.chunk.js": "/fellowship2020/static/js/2.1d08e451.chunk.js",
-    "static/js/2.1d08e451.chunk.js.map": "/fellowship2020/static/js/2.1d08e451.chunk.js.map",
+    "static/js/2.699947dd.chunk.js": "/fellowship2020/static/js/2.699947dd.chunk.js",
+    "static/js/2.699947dd.chunk.js.map": "/fellowship2020/static/js/2.699947dd.chunk.js.map",
     "index.html": "/fellowship2020/index.html",
-    "precache-manifest.2bb583997f8ec2df37ca4ad6e2d52568.js": "/fellowship2020/precache-manifest.2bb583997f8ec2df37ca4ad6e2d52568.js",
+    "precache-manifest.71c321fce9719e24b040925045c26fcb.js": "/fellowship2020/precache-manifest.71c321fce9719e24b040925045c26fcb.js",
     "service-worker.js": "/fellowship2020/service-worker.js",
     "static/css/2.9dd49d4e.chunk.css.map": "/fellowship2020/static/css/2.9dd49d4e.chunk.css.map",
-    "static/js/2.1d08e451.chunk.js.LICENSE.txt": "/fellowship2020/static/js/2.1d08e451.chunk.js.LICENSE.txt",
+    "static/js/2.699947dd.chunk.js.LICENSE.txt": "/fellowship2020/static/js/2.699947dd.chunk.js.LICENSE.txt",
     "static/media/emptyCircleWhite.svg": "/fellowship2020/static/media/emptyCircleWhite.80510874.svg",
     "static/media/filledCircleWhite.svg": "/fellowship2020/static/media/filledCircleWhite.8ab9540b.svg",
     "static/media/right_arrow.svg": "/fellowship2020/static/media/right_arrow.45f31e79.svg",
     "static/media/whitemasthead.png": "/fellowship2020/static/media/whitemasthead.d247d4a9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.983b3b1a.js",
+    "static/js/runtime-main.2619edf1.js",
     "static/css/2.9dd49d4e.chunk.css",
-    "static/js/2.1d08e451.chunk.js",
-    "static/js/main.e3eb64bc.chunk.js"
+    "static/js/2.699947dd.chunk.js",
+    "static/js/main.f57b92f4.chunk.js"
   ]
 }

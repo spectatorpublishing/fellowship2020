@@ -66,7 +66,7 @@ const data = {
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/CDMJMLF4KBGMJMFBG2OZXOAK24"
       },
       {
-        "title": "Columbia First-Year Hong Kongers Reflect: In Both Hong Kong and America, Uncertainties Abound",
+        "title": "Columbia Hong Kongers Reflect: In Both Hong Kong and America, Uncertainties Abound",
         "author": "Eleanor Lin",
         "link": "https://www.columbiaspectator.com/the-eye/2020/08/06/columbia-first-year-hong-kongers-reflect-in-both-hong-kong-and-america-uncertainties-abound/",
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/GYBWOAEKRREB7HEWYAYOKFTGHU.png"
@@ -96,7 +96,7 @@ const data = {
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TSX3EKS5FJD33JAPFMS4NZKZXY"
       },
       {
-        "title": "Columbia announced a test-optional policy for 2020-2021 applicants. Is it time to scrap the test requirement for good?",
+        "title": "Columbia Announced a Test-Optional Policy for 2020-2021 Applicants. Is It Time to Scrap the Test Requirement for Good?",
         "author": "Megan Lunny",
         "link": "https://www.columbiaspectator.com/the-eye/2020/08/28/columbia-announced-a-test-optional-policy-for-2020-2021-applicants-is-it-time-to-scrap-the-test-requirement-for-good/",
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZI67JVHNWJGEBPZW4D6CB43VGQ.jpg"
@@ -144,6 +144,12 @@ const data = {
           "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UMJMY3WRCBBJRIK6TLBJ2FLANA.jpg"
         },
         {
+          "title": "Rankine’s “Citizen: An American Lyric” is added to the Literature Humanities syllabus",
+          "author": "Holly Qu",
+          "link": "https://www.columbiaspectator.com/arts-and-entertainment/2020/08/15/rankines-citizen-an-american-lyric-is-added-to-the-literature-humanities-syllabus/",
+          "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5FIU2SFVSFAQ3C4MFQAXZBJYEU.jpg"
+        },
+        {
           "title": "Getting reel: Columbia filmmakers, industry experts assess pandemic’s effects",
           "author": "Irene Madrigal and Mariam Nasief",
           "link": "https://www.columbiaspectator.com/arts-and-entertainment/2020/08/01/getting-reel-columbia-filmmakers-industry-experts-assess-pandemics-effects/",
@@ -156,7 +162,7 @@ const data = {
           "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/K2WZ3OTVIBBDPKLMIMR5HSUL7M.jpg"
         },
         {
-          "title": "Black in ballet: Harlem Dance Theatre highlights the role of Black dancers in a historically white artform",
+          "title": "Black in ballet: Harlem Dance Theatre highlights the role of Black dancers in a historically white art form",
           "author": "Faith Andrews-O’Neal",
           "link": "https://www.columbiaspectator.com/arts-and-entertainment/2020/08/15/black-in-ballet-harlem-dance-theatre-highlights-the-role-of-black-dancers-in-a-historically-white-artform/",
           "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZCCQURRN2VBV3CNH3HP6UXYKAU"

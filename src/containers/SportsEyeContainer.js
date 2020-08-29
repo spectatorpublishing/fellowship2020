@@ -6,7 +6,7 @@ import MultipleEditorsLetter from '../components/MultipleEditorsLetter';
 
 const letter = "Throughout the course of this fellowship, we challenged our 12 bright-eyed fellows for The Eye and Sports to answer this question: What does it mean to write a feature?\
 \n\nTo challenge an institution? To tell a story? To profile an event? To share a resource? To rethink how we look at things?\
-\n\nHopefully, they did not find an answer. Because there is none.\
+\n\nHopefully, they did not find an answer. Because there isn’t one.\
 \n\nFeature stories do all of those things and more. They cannot be limited by topic or section, and they force readers to confront issues and ideas as unique as the writers are themselves. We tried to teach our fellows how to write and report for a feature, but the reality is that feature journalism is ever-changing.\
 \n\nWhat people can do with video, audio, data, graphics, and photography continues to develop each and every day. Throughout this fellowship, our writers learned how to use different mediums to tell stories and how each tool is able to shift the way a reader encounters their work. They learned how to humanize issues and how to ethically tell the stories of their own experiences and those of others.\
 \n\nJournalism and the topics it covers are constantly shifting, and no one knows this better than our fellows, whose first year at Columbia will be different than they could have imagined. The fellows were thrust into what remains relatively unknown, and in the process of figuring it out, have written stories that reflect the realities of living in this distinct period.\

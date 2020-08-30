@@ -72,7 +72,7 @@ export default class HomePage extends Component {
           <MobileContainer>
           <TopBox></TopBox>
             <HomePageContainer>
-              <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/B5SSCLHRVZHLFGOBDI5LDZJYFE.png"/>
+              <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/33MOGIY4ORAHPDIG2UHJSO3QY4.png"/>
               <LeftDiv>
                 <YearDiv>
                   <Year>2020</Year>
@@ -87,7 +87,7 @@ export default class HomePage extends Component {
 
         <Desktop>
           <HomePageContainer>
-            <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/B5SSCLHRVZHLFGOBDI5LDZJYFE.png"/>
+            <Image src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/33MOGIY4ORAHPDIG2UHJSO3QY4.png"/>
             <LeftDiv>
               <YearDiv>
                 <Year>2020</Year>

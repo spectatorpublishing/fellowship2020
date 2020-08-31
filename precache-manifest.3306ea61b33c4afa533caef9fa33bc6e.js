@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f70d0800fbcb8ee0fd5c13862e2a7764",
+    "revision": "41e9ae9ab4d2cf27d8da4b63ddd5877a",
     "url": "/fellowship2020/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fellowship2020/static/js/2.bd25738c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f037995d2b01c1fb738",
-    "url": "/fellowship2020/static/js/main.254073c5.chunk.js"
+    "revision": "edbcc316d996e7ab7420",
+    "url": "/fellowship2020/static/js/main.9ba7d5d8.chunk.js"
   },
   {
     "revision": "4b19ad7c981098406667",

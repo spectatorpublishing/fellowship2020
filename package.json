@@ -2,7 +2,7 @@
   "name": "fellowship",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://spectatorpublishing.github.io/fellowship2020",
+  "homepage": "https://fellowship2020.columbiadailyspectator.com/",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

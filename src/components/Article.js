@@ -13,7 +13,7 @@ const Image = styled.div`
   border-radius: 25px;
 `
 const Title = styled.h5`
-	position: absolute; 
+  position: absolute; 
   bottom: 10%;
   margin: 3%;
   width: 30vw;

@@ -23,7 +23,7 @@ const TopContainer = styled.div`
   justify-content: center;
 
   @media (max-width: 991px){
-    height: 50vh;
+    height: 60vh;
   }
 `
 
@@ -101,7 +101,7 @@ export default class GenericPanelLayout extends Component {
           {/* <TopContainer img_src={this.props.data.img} isMobile={this.state.isMobile} /> */}
           {this.props.data.articles.map((data, i) =>
             <TopContainer img_src={data.img}>
-              <MobileTitle><a target="_blank" style={{ textDecoration: 'none',color:'white' }} href={data.link}>{data.title}</a></MobileTitle>
+              <MobileTitle><a target="_blank" style={{ textDecoration: 'none',color:'white', fontSize:'1.5rem' }} href={data.link}>{data.title}</a></MobileTitle>
               <MobileAuthor>{data.author}</MobileAuthor>
             </TopContainer>
           )}

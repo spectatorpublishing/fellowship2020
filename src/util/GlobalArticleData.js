@@ -168,7 +168,7 @@ const data = {
           "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/K2WZ3OTVIBBDPKLMIMR5HSUL7M.jpg"
         },
         {
-          "title": "Black in ballet: Harlem Dance Theatre highlights the role of Black dancers in a historically white art form",
+          "title": "Black in ballet: Dance Theatre of Harlem highlights the role of Black dancers in a historically white art form",
           "author": "Faith Andrews-O’Neal",
           "link": "https://www.columbiaspectator.com/arts-and-entertainment/2020/08/15/black-in-ballet-harlem-dance-theatre-highlights-the-role-of-black-dancers-in-a-historically-white-artform/",
           "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZCCQURRN2VBV3CNH3HP6UXYKAU"

@@ -102,10 +102,10 @@ const data = {
         "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZI67JVHNWJGEBPZW4D6CB43VGQ.jpg"
       },
       {
-        "title": "Columbia’s Architecture is Not an Urban Act",
-        "author": "Styvalizh Uribe and Michele Tang",
-        "link": "https://www.columbiaspectator.com/the-eye/2020/08/20/columbias-architecture-is-not-an-urban-act/",
-        "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/HWZ45S7SOVHU5KBCA2NPF6CQEU.png"
+      "title": "Columbia’s Architecture is Not an Urban Act",
+	    "author": "Styvalizh Uribe and Michele Tang",
+	    "link": "https://www.columbiaspectator.com/the-eye/2020/08/20/columbias-architecture-is-not-an-urban-act/",
+      "img": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/HWZ45S7SOVHU5KBCA2NPF6CQEU.png"
       }
       ]
     }

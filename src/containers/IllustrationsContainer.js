@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ExpandingColumns from '../components/ExpandingColumns';
 import PageIntro from '../components/PageIntro';
 import GenericPanelLayout from './GenericPanelLayout';
-import EditorLetter from '../components/EditorLetter';
+import { EditorLetter } from '../components/EditorLetter';
 import { illustration_sections } from '../util/OpinionData'
 import styled from 'styled-components';
 

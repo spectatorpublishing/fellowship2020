@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import PageIntro from '../components/PageIntro';
 import GenericPanelLayout from './GenericPanelLayout';
-import EditorLetter from '../components/EditorLetter';
+import { EditorLetter } from '../components/EditorLetter';
 
 const letter = "Often, I find that the most brilliant stories—those that emphasize truth and accountability—are rooted in data. As the digital medium has transformed, so too have the stories we choose to tell. By acknowledging the role of data in our understanding of society, we can analyze and question the validity of what we consider to be true.\
 \n\nThere are people who fall prey to ongoing systems due to distorted and unexplored data.\

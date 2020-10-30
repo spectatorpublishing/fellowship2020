@@ -1,9 +1,13 @@
 //again, a skeleton container for naming purposes!!! feel free to delete and write your own from
 //scratch if you would like! or reference this for making your own page
 
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 //what do you want to import to display?
+import PageIntro from '../components/PageIntro';
+import GenericPanelLayout from './GenericPanelLayout';
+import { EditorLetter } from '../components/EditorLetter';
+
 
 const letter = "Theaters are dark. Art galleries are closed. Concert halls are silent.\
 \n\nThough there are substitutes like online concerts, live-streamed plays, and virtual museums, you cannot feel the chill that settles over an audience during a gripping scene in a drama. You cannot feel the musical vibrations or chant lyrics at a concert among thousands of strangers. You cannot study the contours of a painter’s brush strokes or notice how the colors change as the light shifts.\
@@ -20,13 +24,20 @@ const PageWrapper = styled.main`
   display: flex;
 `;
 
-
-export const AEContainer = () => {
+class AEContainer extends Component {
+  render() {
     return(
-        <PageWrapper>
-            {/* display some components or other containers -- think about how you could recreate on */}
-            {/* {data.items.map((data, i) => 
-              <Component key={i} data={data} />)} */}
-        </PageWrapper>
+      <React.Fragment>
+          {/* display some components or other containers -- think about how you could recreate on */}
+          {/* {data.items.map((data, i) => 
+            <Component key={i} data={data} />)} */}
+          <PageIntro title="A&E" description={this.props.data.blurb} img_src={this.props.data.img}/>
+          <EditorLetter letter={letter} author="Abby Rooney" role="Arts & Entertainment Editor"/>  
+          {this.props.data.items.map((data, i) => 
+              <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
+      </React.Fragment>
     )
+  }
 }
+
+export default AEContainer;

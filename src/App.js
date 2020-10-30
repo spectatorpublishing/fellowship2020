@@ -5,14 +5,15 @@ import { ThemeProvider } from "styled-components";
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
 import { GlobalStyles, Theme } from "./util/GlobalStyles";
 
-import HomeContainer from './containers/HomeContainer'
-import NewsContainer from './containers/NewsContainer'
-import OpinionContainer from './containers/OpinionContainer'
-import GraphicsContainer from './containers/GraphicsContainer'
-import SportsEyeContainer from './containers/SportsEyeContainer'
-import IllustrationsContainer from './containers/IllustrationsContainer'
-import TestimonialsContainer from './containers/TestimonialsContainer'
+import HomeContainer from './containers/HomeContainer';
+import NewsContainer from './containers/NewsContainer';
+import OpinionContainer from './containers/OpinionContainer';
+import GraphicsContainer from './containers/GraphicsContainer';
+import SportsEyeContainer from './containers/SportsEyeContainer';
+import IllustrationsContainer from './containers/IllustrationsContainer';
+import TestimonialsContainer from './containers/TestimonialsContainer';
 //import your container page here!
+import AEContainer from './containers/AEContainer';
 
 import NavBar from './components/Navigation/NavBar' 
 import Footer from './components/Footer'
@@ -33,8 +34,9 @@ class App extends Component {
     const illo = () => <IllustrationsContainer data = {data.Illustrations} />
     const sportseye = () => <SportsEyeContainer data = {data.SportsEye} />
     const testimonials = () => <TestimonialsContainer data = {data.Testimonials} />
+   
     //give your container data here! where is this data contained?
-
+    const ane = () => <AEContainer data = {data["A&E"]}/>
 
     return (
       <PreloadProvider>
@@ -68,7 +70,7 @@ class App extends Component {
                         <Route exact path="/sports-eye" component={sportseye} />
                         <Route exact path="/testimonials" component={testimonials} />
                         {/* give your page a route and something to render (from above!) */}
-
+                        <Route exact path="/arts-and-entertainment" component={ane} />
 
                         {/* <Route exact path="/design" component={design} /> */}
                         
